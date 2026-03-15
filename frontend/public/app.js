@@ -3,7 +3,7 @@
    ═════════════════════════════════════════════════════════════ */
 
 const API = window.location.hostname.includes('vercel.app')
-    ? 'https://medicaid-fraud-detection-production.up.railway.app'
+    ? 'https://api-production-1b3c.up.railway.app'
     : '';
 let chatHistory = [];
 let dataPage = 1;
