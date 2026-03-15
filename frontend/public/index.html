@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicaid Fraud Detection — AI Dashboard</title>
+    <meta name="description"
+        content="AI-powered Medicaid fraud detection dashboard with Gemini chat, provider analysis, and real-time fraud investigation tools.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="ambient-bg">
+        <div class="ambient-orb orb-1"></div>
+        <div class="ambient-orb orb-2"></div>
+        <div class="ambient-orb orb-3"></div>
+    </div>
+
+    <header id="app-header">
+        <div class="header-inner">
+            <div class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        <path d="M9 12l2 2 4-4" />
+                    </svg>
+                </div>
+                <div>
+                    <h1>Medicaid Fraud Detection</h1>
+                    <span class="subtitle">Powered by Gemini AI · Document AI · Vertex</span>
+                </div>
+            </div>
+            <div class="header-status">
+                <div class="status-pill" id="api-status"><span class="status-dot"></span><span>Connecting...</span>
+                </div>
+                <div class="status-pill data-pill" id="data-status"><span>📊</span><span>Loading...</span></div>
+            </div>
+        </div>
+    </header>
+
+    <nav id="main-nav">
+        <button class="nav-btn active" data-tab="dashboard" id="nav-dashboard">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="7" height="7" />
+                <rect x="14" y="3" width="7" height="7" />
+                <rect x="3" y="14" width="7" height="7" />
+                <rect x="14" y="14" width="7" height="7" />
+            </svg>
+            Dashboard
+        </button>
+        <button class="nav-btn" data-tab="chat" id="nav-chat">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+            </svg>
+            AI Chat
+        </button>
+        <button class="nav-btn" data-tab="providers" id="nav-providers">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
+            </svg>
+            Providers
+        </button>
+        <button class="nav-btn" data-tab="docai" id="nav-docai">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+                <polyline points="14,2 14,8 20,8" />
+                <line x1="16" y1="13" x2="8" y2="13" />
+                <line x1="16" y1="17" x2="8" y2="17" />
+            </svg>
+            Document AI
+        </button>
+        <button class="nav-btn" data-tab="data" id="nav-data">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <ellipse cx="12" cy="5" rx="9" ry="3" />
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+            </svg>
+            Data
+        </button>
+        <button class="nav-btn" data-tab="codes" id="nav-codes">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 3H5a2 2 0 00-2 2v4" />
+                <path d="M15 21h4a2 2 0 002-2v-4" />
+                <path d="M3 15v4a2 2 0 002 2h4" />
+                <path d="M21 9V5a2 2 0 00-2-2h-4" />
+                <path d="M8 12h8" />
+                <path d="M12 8v8" />
+            </svg>
+            Codes
+        </button>
+        <button class="nav-btn" data-tab="report" id="nav-report">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+                <polyline points="14,2 14,8 20,8" />
+            </svg>
+            Report
+        </button>
+        <button class="nav-btn" data-tab="geography" id="nav-geography">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M2 12h20" />
+                <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
+            </svg>
+            Geography
+        </button>
+        <button class="nav-btn" data-tab="nj" id="nav-nj">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s-8-4.5-8-11.8A8 8 0 0112 2a8 8 0 018 8.2c0 7.3-8 11.8-8 11.8z" />
+                <circle cx="12" cy="10" r="3" />
+            </svg>
+            NJ Deep Dive
+        </button>
+        <button class="nav-btn community-nav-btn" data-tab="community" id="nav-community">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 00-3-3.87" />
+                <path d="M16 3.13a4 4 0 010 7.75" />
+            </svg>
+            Community Hub
+        </button>
+    </nav>
+
+    <main id="app-main">
+        <!-- DASHBOARD TAB -->
+        <section id="tab-dashboard" class="tab-content active">
+            <div class="kpi-grid" id="kpi-grid">
+                <div class="kpi-card">
+                    <div class="kpi-label">Total Claims</div>
+                    <div class="kpi-value" id="kpi-claims">—</div>
+                    <div class="kpi-sub">Medicaid billing records</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-label">Unique Providers</div>
+                    <div class="kpi-value" id="kpi-providers">—</div>
+                    <div class="kpi-sub">Billing NPI numbers</div>
+                </div>
+                <div class="kpi-card accent-red">
+                    <div class="kpi-label">High Risk</div>
+                    <div class="kpi-value" id="kpi-highrisk">—</div>
+                    <div class="kpi-sub">Z-score &gt; 5</div>
+                </div>
+                <div class="kpi-card accent-amber">
+                    <div class="kpi-label">Self-Referral Rate</div>
+                    <div class="kpi-value" id="kpi-selfref">—</div>
+                    <div class="kpi-sub">Billing = Servicing NPI</div>
+                </div>
+            </div>
+            <div class="charts-row">
+                <div class="chart-card">
+                    <h3>🎯 Risk Distribution</h3>
+                    <div class="chart-body" id="risk-chart"></div>
+                </div>
+                <div class="chart-card">
+                    <h3>💰 Payment Distribution</h3>
+                    <div class="chart-body" id="payment-chart"></div>
+                </div>
+            </div>
+            <div class="charts-row">
+                <div class="chart-card wide">
+                    <h3>🚨 Top Suspicious Providers</h3>
+                    <div class="table-scroll" id="top-providers-table"></div>
+                </div>
+                <div class="chart-card">
+                    <h3>📐 Benford's Law</h3>
+                    <div class="chart-body" id="benford-chart"></div>
+                    <div class="benford-verdict" id="benford-verdict"></div>
+                </div>
+            </div>
+            <div class="charts-row">
+                <div class="chart-card wide">
+                    <h3>🏥 Top HCPCS Procedure Codes</h3>
+                    <div class="chart-body" id="hcpcs-chart"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CHAT TAB -->
+        <section id="tab-chat" class="tab-content">
+            <div class="chat-container">
+                <div class="chat-header">
+                    <div class="chat-avatar">🤖</div>
+                    <div>
+                        <h2>Fraud Investigation AI</h2>
+                        <p>Ask questions about 227M+ Medicaid claims across 617K+ providers</p>
+                    </div>
+                </div>
+                <div class="chat-messages" id="chat-messages">
+                    <div class="message assistant">
+                        <div class="message-avatar">🔍</div>
+                        <div class="message-content">
+                            <p>I'm your Medicaid Fraud Detection AI analyst. I have access to the full dataset of
+                                <strong>227 million+ claims</strong> across <strong>617,500+ providers</strong>.
+                            </p>
+                            <p>You can ask me things like:</p>
+                            <ul>
+                                <li>"Which providers show the strongest fraud indicators?"</li>
+                                <li>"Explain why NPI 1234567890 is flagged as high risk"</li>
+                                <li>"What HCPCS codes are most associated with fraud?"</li>
+                                <li>"Show me providers with unusual billing spikes"</li>
+                                <li>"What does the Benford's Law analysis tell us?"</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-input-area">
+                    <div class="suggested-prompts" id="suggested-prompts">
+                        <button class="prompt-chip"
+                            data-prompt="What are the top 5 most suspicious providers and why?">Top suspects</button>
+                        <button class="prompt-chip"
+                            data-prompt="Explain the self-referral patterns in the data">Self-referrals</button>
+                        <button class="prompt-chip" data-prompt="Which HCPCS codes are red flags for fraud?">Red flag
+                            codes</button>
+                        <button class="prompt-chip" data-prompt="Summarize the Benford's Law findings">Benford
+                            analysis</button>
+                        <button class="prompt-chip" data-prompt="What temporal anomalies did you find?">Temporal
+                            spikes</button>
+                    </div>
+                    <form id="chat-form" class="chat-input-wrapper">
+                        <input type="text" id="chat-input"
+                            placeholder="Ask about fraud patterns, specific providers, or investigation strategies..."
+                            autocomplete="off">
+                        <button type="submit" id="chat-send">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13" />
+                                <polygon points="22,2 15,22 11,13 2,9" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROVIDERS TAB -->
+        <section id="tab-providers" class="tab-content">
+            <div class="providers-header">
+                <h2>Provider Explorer</h2>
+                <div class="search-bar">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="8" />
+                        <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                    </svg>
+                    <input type="text" id="provider-search" placeholder="Search by NPI or HCPCS code...">
+                </div>
+                <div class="filter-bar">
+                    <select id="sort-select">
+                        <option value="total_paid">Total Paid (High→Low)</option>
+                        <option value="total_claims">Total Claims</option>
+                        <option value="unique_hcpcs_codes">Procedure Count</option>
+                        <option value="avg_payment_per_claim">Avg $/Claim</option>
+                        <option value="payment_coefficient_of_variation">Payment Variability</option>
+                    </select>
+                </div>
+            </div>
+            <div class="providers-grid" id="providers-grid"></div>
+            <div class="load-more-container">
+                <button id="load-more-btn" class="btn-secondary">Load More Providers</button>
+            </div>
+            <div class="modal-overlay" id="provider-modal">
+                <div class="modal-card">
+                    <button class="modal-close" id="modal-close">&times;</button>
+                    <div id="modal-content"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DOCUMENT AI TAB -->
+        <section id="tab-docai" class="tab-content">
+            <div class="docai-container">
+                <!-- RAG Pipeline Header -->
+                <div class="docai-header">
+                    <div class="docai-icon">🧠</div>
+                    <div>
+                        <h2>Document AI + RAG Pipeline</h2>
+                        <p>Google Document AI Layout Parser → Embeddings → Vector Search → Gemini Augmented Generation
+                        </p>
+                    </div>
+                </div>
+
+                <!-- RAG Status Panel -->
+                <div class="rag-status-panel" id="rag-status-panel">
+                    <div class="rag-status-grid">
+                        <div class="rag-stat">
+                            <span class="rag-stat-value" id="rag-chunks-count">—</span>
+                            <span class="rag-stat-label">Indexed Chunks</span>
+                        </div>
+                        <div class="rag-stat">
+                            <span class="rag-stat-value" id="rag-docs-count">—</span>
+                            <span class="rag-stat-label">Documents</span>
+                        </div>
+                        <div class="rag-stat">
+                            <span class="rag-stat-value" id="rag-embed-model">—</span>
+                            <span class="rag-stat-label">Embedding Model</span>
+                        </div>
+                        <div class="rag-stat">
+                            <span class="rag-stat-value" id="rag-gen-model">—</span>
+                            <span class="rag-stat-label">Generation Model</span>
+                        </div>
+                    </div>
+                    <div class="rag-pipeline-visual">
+                        <div class="pipeline-step" id="pipe-parse"><span>📄</span>Parse PDF</div>
+                        <div class="pipeline-arrow">→</div>
+                        <div class="pipeline-step" id="pipe-chunk"><span>✂️</span>Chunk</div>
+                        <div class="pipeline-arrow">→</div>
+                        <div class="pipeline-step" id="pipe-embed"><span>🧮</span>Embed</div>
+                        <div class="pipeline-arrow">→</div>
+                        <div class="pipeline-step" id="pipe-search"><span>🔍</span>Search</div>
+                        <div class="pipeline-arrow">→</div>
+                        <div class="pipeline-step" id="pipe-generate"><span>✨</span>Generate</div>
+                    </div>
+                </div>
+
+                <!-- RAG Query Interface -->
+                <div class="rag-query-section">
+                    <h3>🔍 Ask Questions (RAG Search)</h3>
+                    <p class="section-desc">Your question is embedded, matched against document chunks via vector
+                        search, then Gemini generates an answer from the most relevant context.</p>
+                    <form id="rag-query-form" class="rag-query-form">
+                        <input type="text" id="rag-question"
+                            placeholder="e.g. Which providers have the highest fraud risk and why?" autocomplete="off">
+                        <button type="submit" class="btn-primary" id="rag-query-btn">
+                            <span class="spinner-sm" id="rag-query-spinner" style="display:none;"></span>
+                            Search & Generate
+                        </button>
+                    </form>
+                    <div class="rag-suggested-queries">
+                        <button class="rag-chip"
+                            data-q="Which providers have the highest fraud risk scores and why?">Top fraud
+                            risks</button>
+                        <button class="rag-chip"
+                            data-q="What does Benford's Law analysis reveal about billing patterns?">Benford's
+                            Law</button>
+                        <button class="rag-chip"
+                            data-q="Which HCPCS codes are most associated with suspicious billing?">Suspicious HCPCS
+                            codes</button>
+                        <button class="rag-chip"
+                            data-q="What temporal anomalies were detected and which months are most concerning?">Temporal
+                            anomalies</button>
+                        <button class="rag-chip" data-q="What self-referral patterns exist in the data?">Self-referral
+                            patterns</button>
+                    </div>
+                    <div class="rag-answer-panel" id="rag-answer-panel" style="display:none;">
+                        <div class="rag-answer-header">
+                            <h4>✨ Generated Answer</h4>
+                            <span class="rag-answer-meta" id="rag-answer-meta"></span>
+                        </div>
+                        <div class="rag-answer-body" id="rag-answer-body"></div>
+                        <div class="rag-chunks-used">
+                            <h4>📦 Retrieved Chunks (Vector Search Results)</h4>
+                            <div id="rag-chunks-list" class="rag-chunks-list"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Document Processing -->
+                <div class="rag-process-section">
+                    <h3>📄 Process Documents</h3>
+                    <div class="docai-actions">
+                        <button class="docai-action-btn primary" id="analyze-sample-btn">
+                            <span class="action-icon">🔬</span>
+                            <span>Analyze Medicaid Sample PDF</span>
+                            <span class="action-sub">500-row billing data pre-loaded</span>
+                        </button>
+                        <button class="docai-action-btn" id="upload-pdf-btn">
+                            <span class="action-icon">📤</span>
+                            <span>Upload & Index PDF</span>
+                            <span class="action-sub">Process with Document AI Layout Parser</span>
+                        </button>
+                        <button class="docai-action-btn" id="rag-reindex-btn">
+                            <span class="action-icon">🔄</span>
+                            <span>Re-index Statistical Data</span>
+                            <span class="action-sub">Rebuild vector store from analysis data</span>
+                        </button>
+                        <button class="docai-action-btn" id="browse-chunks-btn">
+                            <span class="action-icon">📦</span>
+                            <span>Browse All Chunks</span>
+                            <span class="action-sub">View indexed document chunks</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Upload Zone (hidden by default) -->
+                <div class="upload-zone" id="upload-zone" style="display:none;">
+                    <input type="file" id="pdf-upload" accept=".pdf" hidden>
+                    <div class="upload-dropzone" id="dropzone">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="48"
+                            height="48">
+                            <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+                            <polyline points="17,8 12,3 7,8" />
+                            <line x1="12" y1="3" x2="12" y2="15" />
+                        </svg>
+                        <p>Drag &amp; drop a PDF here, or <strong>click to browse</strong></p>
+                        <span class="upload-hint">Document AI Layout Parser will chunk and index your PDF</span>
+                    </div>
+                    <div class="file-info" id="file-info" style="display:none;"></div>
+                </div>
+
+                <!-- Analysis Mode Selector -->
+                <div class="mode-selector" id="mode-selector" style="display:none;">
+                    <h3>Analysis Mode</h3>
+                    <div class="mode-grid">
+                        <button class="mode-btn active" data-mode="analyze"><span>🔍</span> Fraud Analysis</button>
+                        <button class="mode-btn" data-mode="extract"><span>📊</span> Extract JSON</button>
+                        <button class="mode-btn" data-mode="summarize"><span>📝</span> Summarize</button>
+                        <button class="mode-btn" data-mode="transcribe"><span>📋</span> Transcribe HTML</button>
+                        <button class="mode-btn" data-mode="custom"><span>💬</span> Custom Prompt</button>
+                    </div>
+                    <div class="custom-prompt-area" id="custom-prompt-area" style="display:none;">
+                        <textarea id="custom-prompt" placeholder="Enter your custom analysis prompt..."
+                            rows="3"></textarea>
+                    </div>
+                    <button class="btn-primary" id="run-analysis-btn">
+                        <span class="spinner-sm" id="analysis-spinner" style="display:none;"></span>
+                        Run Gemini Analysis
+                    </button>
+                </div>
+
+                <!-- Results -->
+                <div class="docai-results" id="docai-results" style="display:none;">
+                    <div class="result-header">
+                        <h3>📋 Analysis Results</h3>
+                        <div class="result-meta" id="result-meta"></div>
+                    </div>
+                    <div class="result-body" id="result-body"></div>
+                </div>
+
+                <!-- Chunk Browser (hidden by default) -->
+                <div class="chunk-browser" id="chunk-browser" style="display:none;">
+                    <div class="chunk-browser-header">
+                        <h3>📦 Indexed Chunks</h3>
+                        <div class="chunk-page-info" id="chunk-page-info"></div>
+                    </div>
+                    <div id="chunk-list" class="chunk-list"></div>
+                    <div class="chunk-pagination">
+                        <button class="btn-sm" id="chunk-prev" disabled>← Prev</button>
+                        <button class="btn-sm" id="chunk-next">Next →</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DATA EXPLORER TAB -->
+        <section id="tab-data" class="tab-content">
+            <div class="data-explorer">
+                <div class="data-header">
+                    <h2>📊 Raw Data Explorer</h2>
+                    <p>Browse the Medicaid Provider Spending dataset — 227M+ records, 617K+ providers</p>
+                    <div class="data-source-badge">
+                        <span class="gcs-icon">☁️</span>
+                        <code>gs://frauds/medicaid-provider-spending.csv</code>
+                        <a href="https://storage.googleapis.com/frauds/medicaid-provider-spending.csv" target="_blank"
+                            rel="noopener" class="download-link">⬇ Download Full CSV (11GB)</a>
+                    </div>
+                </div>
+                <div class="data-controls">
+                    <div class="data-search">
+                        <input type="text" id="data-filter" placeholder="Filter by NPI, HCPCS code, or amount...">
+                    </div>
+                    <div class="data-pagination">
+                        <button id="data-prev" class="btn-sm" disabled>← Prev</button>
+                        <span id="data-page-info">Page 1</span>
+                        <button id="data-next" class="btn-sm">Next →</button>
+                        <select id="data-pagesize">
+                            <option value="25">25 rows</option>
+                            <option value="50" selected>50 rows</option>
+                            <option value="100">100 rows</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="data-table-container" id="data-table-container">
+                    <div class="report-loading">
+                        <div class="spinner"></div>
+                        <p>Loading provider data...</p>
+                    </div>
+                </div>
+                <div class="data-summary" id="data-summary"></div>
+            </div>
+        </section>
+
+        <!-- HCPCS CODE ANOMALIES TAB -->
+        <section id="tab-codes" class="tab-content">
+            <div class="data-explorer">
+                <div class="data-header">
+                    <h2>🧬 HCPCS Code Anomalies</h2>
+                    <p>Upcoding and unbundling signals from provider-by-code payment behavior</p>
+                </div>
+                <div class="data-controls">
+                    <div class="data-search">
+                        <input type="text" id="codes-filter" placeholder="Filter by provider NPI or HCPCS code...">
+                    </div>
+                    <div class="data-pagination">
+                        <button id="codes-prev" class="btn-sm" disabled>← Prev</button>
+                        <span id="codes-page-info">Page 1</span>
+                        <button id="codes-next" class="btn-sm">Next →</button>
+                        <select id="codes-pagesize">
+                            <option value="25">25 rows</option>
+                            <option value="50" selected>50 rows</option>
+                            <option value="100">100 rows</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="data-summary" id="codes-summary"></div>
+                <div class="data-table-container" id="codes-table-container">
+                    <div class="report-loading">
+                        <div class="spinner"></div>
+                        <p>Loading code anomaly analysis...</p>
+                    </div>
+                </div>
+                <div class="card" style="margin-top:1rem">
+                    <h3>🧩 Unbundling Signals</h3>
+                    <div id="codes-unbundling" style="margin-top:.75rem;color:var(--text-secondary);font-size:.82rem">
+                        Run <code>python analyze_codes.py</code> to generate unbundling signals.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- REPORT TAB -->
+        <section id="tab-report" class="tab-content">
+            <div class="report-container" id="report-container">
+                <div class="report-loading">
+                    <div class="spinner"></div>
+                    <p>Loading fraud report...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- GEOGRAPHY TAB -->
+        <section id="tab-geography" class="tab-content">
+            <div class="section-header">
+                <span style="font-size:1.6rem">🌎</span>
+                <div>
+                    <h2>Geographic Fraud Analysis</h2>
+                    <p class="section-subtitle">NPI Registry enrichment + Google Search Grounding — real provider
+                        locations &amp; fraud intelligence</p>
+                </div>
+            </div>
+
+            <!-- Geo Overview KPIs -->
+            <div class="kpi-grid" id="geo-kpi-grid">
+                <div class="kpi-card">
+                    <div class="kpi-value" id="geo-providers">—</div>
+                    <div class="kpi-label">ENRICHED PROVIDERS</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-value" id="geo-states">—</div>
+                    <div class="kpi-label">STATES COVERED</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-value" id="geo-hotspots">—</div>
+                    <div class="kpi-label">ZIP HOTSPOTS</div>
+                </div>
+                <div class="kpi-card" style="border-color: var(--accent-purple);">
+                    <div class="kpi-value" id="geo-sources" style="color: var(--accent-purple);">—</div>
+                    <div class="kpi-label">GROUNDING SOURCES</div>
+                </div>
+            </div>
+
+            <!-- State Heatmap -->
+            <div class="card" style="margin-top:1.5rem">
+                <h3>🗺️ Fraud by State</h3>
+                <div id="geo-state-bars" class="geo-bars-container"></div>
+            </div>
+
+            <!-- Zip Hotspots -->
+            <div class="card" style="margin-top:1.5rem">
+                <h3>🔥 Zip Code Hotspots</h3>
+                <p style="color:var(--text-muted);margin-bottom:1rem;font-size:.85rem">Areas with concentrated
+                    suspicious billing from multiple providers</p>
+                <div id="geo-zip-grid" class="geo-hotspot-grid"></div>
+            </div>
+
+            <!-- Enriched Provider Table -->
+            <div class="card" style="margin-top:1.5rem">
+                <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.75rem">
+                    <h3>📋 Provider Registry Data</h3>
+                    <div style="display:flex;gap:.5rem;flex-wrap:wrap">
+                        <select id="geo-state-filter" class="geo-select">
+                            <option value="">All States</option>
+                        </select>
+                        <select id="geo-risk-filter" class="geo-select">
+                            <option value="">All Risks</option>
+                            <option value="CRITICAL">🔴 Critical</option>
+                            <option value="HIGH">🟠 High</option>
+                            <option value="MEDIUM">🟡 Medium</option>
+                            <option value="ELEVATED">🔵 Elevated</option>
+                            <option value="LOW">🟢 Low</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="table-wrap" style="margin-top:1rem">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>NPI</th>
+                                <th>Provider Name</th>
+                                <th>City</th>
+                                <th>State</th>
+                                <th>Zip</th>
+                                <th>Total Paid</th>
+                                <th>Specialty</th>
+                                <th>Risk</th>
+                            </tr>
+                        </thead>
+                        <tbody id="geo-provider-tbody"></tbody>
+                    </table>
+                </div>
+                <div style="display:flex;justify-content:center;gap:.5rem;margin-top:1rem">
+                    <button class="btn btn-sm" id="geo-prev-btn" onclick="geoProviderPage(-1)">← Prev</button>
+                    <span id="geo-page-info" style="color:var(--text-muted);font-size:.85rem;line-height:2"></span>
+                    <button class="btn btn-sm" id="geo-next-btn" onclick="geoProviderPage(1)">Next →</button>
+                </div>
+            </div>
+
+            <!-- Grounded Investigation -->
+            <div class="card" style="margin-top:1.5rem">
+                <h3>🔍 Google Search Grounded Investigation</h3>
+                <p style="color:var(--text-muted);margin-bottom:1rem;font-size:.85rem">Real-world fraud intelligence
+                    from Google Search — news, OIG exclusions, DOJ actions</p>
+                <div id="geo-investigation" class="report-content" style="max-height:500px;overflow-y:auto"></div>
+            </div>
+
+            <!-- Live Grounded Search -->
+            <div class="card" style="margin-top:1.5rem">
+                <h3>🌐 Live Grounded Search</h3>
+                <p style="color:var(--text-muted);margin-bottom:1rem;font-size:.85rem">Ask questions about fraud
+                    providers — backed by real-time Google Search</p>
+                <div style="display:flex;gap:.75rem">
+                    <input type="text" id="geo-search-input" class="chat-input"
+                        placeholder="e.g. Has NPI 1417262056 been investigated for fraud?" style="flex:1">
+                    <button class="btn btn-primary" onclick="geoGroundedSearch()">Search</button>
+                </div>
+                <div class="rag-chips" style="margin-top:.75rem">
+                    <span class="rag-chip" onclick="geoGroundedSearch('Known fraud cases in New York Medicaid')">NY
+                        fraud cases</span>
+                    <span class="rag-chip" onclick="geoGroundedSearch('OIG exclusion list Medicaid providers')">OIG
+                        exclusions</span>
+                    <span class="rag-chip"
+                        onclick="geoGroundedSearch('Largest Medicaid fraud settlements 2024 2025')">Biggest
+                        settlements</span>
+                    <span class="rag-chip" onclick="geoGroundedSearch('Home health aide billing fraud schemes')">Home
+                        health fraud</span>
+                </div>
+                <div id="geo-search-result" style="margin-top:1rem"></div>
+            </div>
+        </section>
+
+        <!-- NJ DEEP DIVE TAB -->
+        <section id="tab-nj" class="tab-content">
+            <!-- NJ KPIs -->
+            <div class="kpi-grid" id="nj-kpi-grid">
+                <div class="kpi-card">
+                    <div class="kpi-value" id="nj-kpi-providers">-</div>
+                    <div class="kpi-label">NJ Providers Analyzed</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-value" id="nj-kpi-paid">-</div>
+                    <div class="kpi-label">Total NJ Medicaid Paid</div>
+                </div>
+                <div class="kpi-card" style="border-top:3px solid #ef4444">
+                    <div class="kpi-value" id="nj-kpi-critical">-</div>
+                    <div class="kpi-label">CRITICAL Risk</div>
+                </div>
+                <div class="kpi-card" style="border-top:3px solid #f97316">
+                    <div class="kpi-value" id="nj-kpi-high">-</div>
+                    <div class="kpi-label">HIGH Risk</div>
+                </div>
+                <div class="kpi-card" style="border-top:3px solid #a855f7">
+                    <div class="kpi-value" id="nj-kpi-investigated">-</div>
+                    <div class="kpi-label">Investigated (Grounded)</div>
+                </div>
+                <div class="kpi-card">
+                    <div class="kpi-value" id="nj-kpi-sources">-</div>
+                    <div class="kpi-label">Google Sources Found</div>
+                </div>
+            </div>
+
+            <!-- NJ Providers Table -->
+            <div class="section-card" style="margin-top:1.5rem">
+                <div class="section-header">
+                    <h2>🗽 NJ High-Risk Providers</h2>
+                    <div style="display:flex;gap:.5rem">
+                        <select id="nj-risk-filter" class="chat-input" style="width:auto;padding:.4rem .75rem"
+                            onchange="loadNJProviders()">
+                            <option value="">All Risks</option>
+                            <option value="CRITICAL">CRITICAL</option>
+                            <option value="HIGH">HIGH</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="nj-providers-table"></div>
+            </div>
+
+            <!-- DEBARMENT CROSS-MATCH SECTION -->
+            <div class="section-card" style="margin-top:2rem;border-top:4px solid #ef4444">
+                <div class="section-header">
+                    <h2>🚨 Debarment Cross-Match — Post-Exclusion Fraud</h2>
+                </div>
+                <p style="color:var(--text-secondary);margin-bottom:1rem">
+                    Cross-matched the NJ debarment/exclusion list against 227M Medicaid claims to find providers who
+                    billed <strong>after</strong> being excluded.
+                </p>
+                <div class="kpi-grid" id="deb-kpi-grid">
+                    <div class="kpi-card" style="border-top:3px solid #dc2626">
+                        <div class="kpi-value" id="deb-kpi-debarred">-</div>
+                        <div class="kpi-label">Total Debarred Providers</div>
+                    </div>
+                    <div class="kpi-card" style="border-top:3px solid #f97316">
+                        <div class="kpi-value" id="deb-kpi-matched">-</div>
+                        <div class="kpi-label">Found in Claims Data</div>
+                    </div>
+                    <div class="kpi-card"
+                        style="border-top:3px solid #ef4444;background:linear-gradient(135deg,rgba(239,68,68,0.1),rgba(220,38,38,0.05))">
+                        <div class="kpi-value" id="deb-kpi-post-exclusion" style="color:#ef4444">-</div>
+                        <div class="kpi-label">Post-Exclusion Offenders</div>
+                    </div>
+                    <div class="kpi-card"
+                        style="border-top:3px solid #dc2626;background:linear-gradient(135deg,rgba(220,38,38,0.1),rgba(185,28,28,0.05))">
+                        <div class="kpi-value" id="deb-kpi-paid" style="color:#dc2626">-</div>
+                        <div class="kpi-label">Post-Exclusion $ Paid</div>
+                    </div>
+                </div>
+
+                <!-- Top Post-Exclusion Offenders -->
+                <div style="margin-top:1.5rem">
+                    <h3 style="margin-bottom:1rem;color:var(--text-primary)">🔴 Post-Exclusion Offenders — Billing After
+                        Debarment</h3>
+                    <div id="deb-offenders-table"></div>
+                </div>
+
+                <!-- Debarment Severity Distribution -->
+                <div style="margin-top:1.5rem">
+                    <h3 style="margin-bottom:1rem;color:var(--text-primary)">📊 Cross-Match Severity Distribution</h3>
+                    <div id="deb-severity-dist" style="display:flex;gap:1rem;flex-wrap:wrap"></div>
+                </div>
+
+                <!-- Full Debarment List Browser -->
+                <div style="margin-top:1.5rem">
+                    <h3 style="margin-bottom:1rem;color:var(--text-primary)">📋 NJ Debarment List (<span
+                            id="deb-total-count"></span> Providers)</h3>
+                    <input type="text" id="deb-search" class="chat-input"
+                        placeholder="Search debarred providers by name, NPI, or type..."
+                        style="margin-bottom:1rem;max-width:500px" oninput="filterDebarmentList()">
+                    <div id="deb-full-list" style="max-height:400px;overflow-y:auto"></div>
+                </div>
+            </div>
+
+            <!-- NJ Grounded Search -->
+            <div class="section-card" style="margin-top:1.5rem">
+                <div class="section-header">
+                    <h2>🔍 NJ Fraud Intelligence Search</h2>
+                </div>
+                <div style="display:flex;gap:.75rem">
+                    <input type="text" id="nj-search-input" class="chat-input"
+                        placeholder="e.g. Has CARE FINDERS TOTAL CARE been investigated for fraud?" style="flex:1">
+                    <button class="btn btn-primary" onclick="njGroundedSearch()">Search</button>
+                </div>
+                <div class="rag-chips" style="margin-top:.75rem">
+                    <span class="rag-chip"
+                        onclick="njGroundedSearch('NJ AG Medicaid fraud enforcement actions 2024 2025')">NJ AG
+                        Actions</span>
+                    <span class="rag-chip" onclick="njGroundedSearch('Care Finders Total Care LLC Medicaid fraud')">Care
+                        Finders</span>
+                    <span class="rag-chip" onclick="njGroundedSearch('NJ home health aide billing fraud OIG')">Home
+                        Health Fraud</span>
+                    <span class="rag-chip"
+                        onclick="njGroundedSearch('Post-exclusion Medicaid billing NJ debarred')">Post-Exclusion
+                        Billing</span>
+                </div>
+                <div id="nj-search-result" style="margin-top:1rem"></div>
+            </div>
+
+            <!-- CULPRIT DOSSIERS SECTION -->
+            <div class="section-card" style="margin-top:2rem;border-top:4px solid #f59e0b">
+                <div class="section-header">
+                    <h2>🎯 Culprit Dossiers — Suspect Investigation</h2>
+                </div>
+                <p style="color:var(--text-secondary);margin-bottom:1rem">Deep investigation of every suspect: NPI
+                    registry, Google Search OSINT, business entity research, and prosecution-ready evidence packages.
+                </p>
+
+                <!-- Dossier KPIs -->
+                <div class="kpi-grid" id="dossier-kpi-grid">
+                    <div class="kpi-card" style="border-color:#f59e0b">
+                        <div class="kpi-value" id="dos-kpi-suspects">...</div>
+                        <div class="kpi-label">SUSPECTS INVESTIGATED</div>
+                    </div>
+                    <div class="kpi-card" style="border-color:#ef4444">
+                        <div class="kpi-value" id="dos-kpi-federal">...</div>
+                        <div class="kpi-label">FEDERAL CRIMES</div>
+                    </div>
+                    <div class="kpi-card" style="border-color:#8b5cf6">
+                        <div class="kpi-value" id="dos-kpi-exposure">...</div>
+                        <div class="kpi-label">TOTAL FRAUD EXPOSURE</div>
+                    </div>
+                    <div class="kpi-card" style="border-color:#10b981">
+                        <div class="kpi-value" id="dos-kpi-sources">...</div>
+                        <div class="kpi-label">OSINT SOURCES</div>
+                    </div>
+                </div>
+
+                <!-- Suspect Dossier Table -->
+                <div style="margin-top:1.5rem">
+                    <h3 style="color:var(--text-primary);margin-bottom:1rem">🔴 Suspect Dossier Table</h3>
+                    <div style="display:flex;gap:.5rem;margin-bottom:1rem;flex-wrap:wrap">
+                        <button class="rag-chip" onclick="filterDossiers('all')" id="dos-filter-all"
+                            style="background:rgba(245,158,11,0.3)">All Suspects</button>
+                        <button class="rag-chip" onclick="filterDossiers('POST-EXCLUSION')" id="dos-filter-post">🚨
+                            Post-Exclusion</button>
+                        <button class="rag-chip" onclick="filterDossiers('DEBARMENT-MATCH')">⚠️ Debarment Match</button>
+                        <button class="rag-chip" onclick="filterDossiers('HIGH-RISK')">🔴 High Risk</button>
+                    </div>
+                    <div id="dossier-table" style="max-height:600px;overflow-y:auto"></div>
+                </div>
+            </div>
+
+            <!-- PROSECUTION REPORT SECTION -->
+            <div class="section-card" style="margin-top:2rem;border-top:4px solid #dc2626">
+                <div class="section-header">
+                    <h2>⚖️ Prosecution Report & Reporting Guide</h2>
+                    <button class="btn btn-primary" onclick="loadProsecutionReport()" id="prosecution-report-btn">Load
+                        Full Report</button>
+                </div>
+                <p style="color:var(--text-secondary);margin-bottom:1rem">Attorney General-quality prosecution brief
+                    with specific charges, reporting contacts, evidence preservation, and estimated financial impact.
+                </p>
+
+                <!-- Reporting Contacts Quick Reference -->
+                <div
+                    style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem;margin-bottom:1.5rem">
+                    <div
+                        style="background:rgba(239,68,68,0.1);border:1px solid rgba(239,68,68,0.3);border-radius:12px;padding:1rem">
+                        <h4 style="color:#ef4444;margin-bottom:.5rem">🏛️ Federal Reporting</h4>
+                        <p style="color:var(--text-secondary);font-size:.85rem;line-height:1.6">
+                            <strong>OIG Hotline:</strong> 1-800-HHS-TIPS<br>
+                            <strong>OIG Online:</strong> tips.oig.hhs.gov<br>
+                            <strong>FBI Newark:</strong> (973) 792-3000<br>
+                            <strong>FBI Tips:</strong> tips.fbi.gov
+                        </p>
+                    </div>
+                    <div
+                        style="background:rgba(245,158,11,0.1);border:1px solid rgba(245,158,11,0.3);border-radius:12px;padding:1rem">
+                        <h4 style="color:#f59e0b;margin-bottom:.5rem">🗽 NJ State Reporting</h4>
+                        <p style="color:var(--text-secondary);font-size:.85rem;line-height:1.6">
+                            <strong>NJ AG MFCU:</strong> (609) 292-8740<br>
+                            <strong>Email:</strong> medicaidfraud@njoag.gov<br>
+                            <strong>NJ DMAHS:</strong> Provider Enrollment<br>
+                            <strong>Medical Examiners:</strong> License Board
+                        </p>
+                    </div>
+                    <div
+                        style="background:rgba(139,92,246,0.1);border:1px solid rgba(139,92,246,0.3);border-radius:12px;padding:1rem">
+                        <h4 style="color:#8b5cf6;margin-bottom:.5rem">💰 Whistleblower (Qui Tam)</h4>
+                        <p style="color:var(--text-secondary);font-size:.85rem;line-height:1.6">
+                            <strong>False Claims Act</strong> 31 U.S.C. § 3729<br>
+                            <strong>Recovery:</strong> 15-30% of recovered funds<br>
+                            <strong>Protection:</strong> Anti-retaliation law<br>
+                            <strong>Treble damages</strong> + per-claim penalties
+                        </p>
+                    </div>
+                </div>
+
+                <div id="prosecution-report-content" style="max-height:800px;overflow-y:auto"></div>
+            </div>
+
+            <!-- NJ Report (Legacy) -->
+            <div class="section-card" style="margin-top:1.5rem">
+                <div class="section-header">
+                    <h2>📄 NJ Deep Dive Report (Original)</h2>
+                    <button class="btn btn-primary" onclick="loadNJReport()" id="nj-report-btn">Load Report</button>
+                </div>
+                <div id="nj-report-content" style="max-height:600px;overflow-y:auto"></div>
+            </div>
+        </section>
+
+        <!-- COMMUNITY HUB TAB -->
+        <section id="tab-community" class="tab-content">
+            <!-- Hero Section -->
+            <div class="community-hero">
+                <div class="community-hero-badge">🛡️ PUBLIC TRANSPARENCY REPORT</div>
+                <h1 class="community-hero-title">Where Are Your Tax Dollars Going?</h1>
+                <p class="community-hero-subtitle" id="community-headline">Our AI analyzed thousands of healthcare
+                    providers — and found alarming patterns of Medicaid fraud that could affect your community.</p>
+                <div class="community-hero-actions">
+                    <button class="btn-community-primary"
+                        onclick="document.getElementById('community-search-section').scrollIntoView({behavior:'smooth'})">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            style="width:18px;height:18px">
+                            <circle cx="11" cy="11" r="8" />
+                            <path d="M21 21l-4.35-4.35" />
+                        </svg>
+                        Search Your Area
+                    </button>
+                    <button class="btn-community-secondary"
+                        onclick="document.getElementById('community-chat-section').scrollIntoView({behavior:'smooth'})">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            style="width:18px;height:18px">
+                            <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+                        </svg>
+                        Ask AI About Fraud
+                    </button>
+                </div>
+            </div>
+
+            <!-- Key Findings Cards -->
+            <div class="community-findings-grid" id="community-findings-grid">
+                <div class="community-finding-card skeleton-card">
+                    <div class="skeleton-icon"></div>
+                    <div class="skeleton-text"></div>
+                    <div class="skeleton-detail"></div>
+                </div>
+                <div class="community-finding-card skeleton-card">
+                    <div class="skeleton-icon"></div>
+                    <div class="skeleton-text"></div>
+                    <div class="skeleton-detail"></div>
+                </div>
+                <div class="community-finding-card skeleton-card">
+                    <div class="skeleton-icon"></div>
+                    <div class="skeleton-text"></div>
+                    <div class="skeleton-detail"></div>
+                </div>
+            </div>
+
+            <!-- How It Works -->
+            <div class="community-section" style="margin-top:2rem">
+                <h2 class="community-section-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        style="width:24px;height:24px;color:var(--accent)">
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3" />
+                        <circle cx="12" cy="17" r=".5" />
+                    </svg>
+                    How Did We Find This?
+                </h2>
+                <div class="community-pipeline" id="community-pipeline">
+                    <div class="pipeline-step">
+                        <div class="pipeline-step-num">1</div>
+                        <div class="pipeline-step-content">
+                            <h4>Data Collection</h4>
+                            <p>Analyzed 227 million+ Medicaid billing records from CMS</p>
+                        </div>
+                    </div>
+                    <div class="pipeline-connector"></div>
+                    <div class="pipeline-step">
+                        <div class="pipeline-step-num">2</div>
+                        <div class="pipeline-step-content">
+                            <h4>AI Statistical Analysis</h4>
+                            <p>Detected anomalies using z-scores and Benford's Law</p>
+                        </div>
+                    </div>
+                    <div class="pipeline-connector"></div>
+                    <div class="pipeline-step">
+                        <div class="pipeline-step-num">3</div>
+                        <div class="pipeline-step-content">
+                            <h4>Identity Verification</h4>
+                            <p>Verified each provider through NPI National Registry</p>
+                        </div>
+                    </div>
+                    <div class="pipeline-connector"></div>
+                    <div class="pipeline-step">
+                        <div class="pipeline-step-num">4</div>
+                        <div class="pipeline-step-content">
+                            <h4>Deep OSINT Investigation</h4>
+                            <p>Automated Google Search for public fraud information</p>
+                        </div>
+                    </div>
+                    <div class="pipeline-connector"></div>
+                    <div class="pipeline-step">
+                        <div class="pipeline-step-num">5</div>
+                        <div class="pipeline-step-content">
+                            <h4>Prosecution Report</h4>
+                            <p>AG-quality prosecution brief generated for authorities</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Search Your Area -->
+            <div class="community-section" id="community-search-section" style="margin-top:2rem">
+                <h2 class="community-section-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        style="width:24px;height:24px;color:var(--green)">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                        <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    Search Your Area
+                </h2>
+                <p class="community-section-desc">Find out if there are flagged healthcare providers near you. Enter
+                    your zip code, city, or state.</p>
+
+                <div class="community-search-box">
+                    <div class="community-search-input-group">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="search-icon">
+                            <circle cx="11" cy="11" r="8" />
+                            <path d="M21 21l-4.35-4.35" />
+                        </svg>
+                        <input type="text" id="community-search-input"
+                            placeholder="Enter zip code, city, or state (e.g., 07102, Newark, NJ)" autocomplete="off">
+                        <button class="btn-community-search" onclick="communitySearch()"
+                            id="community-search-btn">Search</button>
+                    </div>
+                    <div class="community-search-shortcuts">
+                        <button class="btn-geo-detect" onclick="communityGeolocate()" id="community-geo-btn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                style="width:14px;height:14px">
+                                <circle cx="12" cy="12" r="3" />
+                                <path d="M12 2v4M12 18v4M2 12h4M18 12h4" />
+                            </svg>
+                            Use My Location
+                        </button>
+                        <button class="btn-geo-quick" onclick="communityQuickSearch('NJ')">NJ</button>
+                        <button class="btn-geo-quick" onclick="communityQuickSearch('NY')">NY</button>
+                        <button class="btn-geo-quick" onclick="communityQuickSearch('CA')">CA</button>
+                        <button class="btn-geo-quick" onclick="communityQuickSearch('MA')">MA</button>
+                        <button class="btn-geo-quick" onclick="communityQuickSearch('TN')">TN</button>
+                    </div>
+                </div>
+
+                <!-- Search Results -->
+                <div id="community-search-results" class="community-search-results" style="display:none">
+                    <div class="community-results-header" id="community-results-header"></div>
+                    <div class="community-results-risk-bar" id="community-results-risk-bar"></div>
+                    <div class="community-results-list" id="community-results-list"></div>
+                </div>
+            </div>
+
+            <!-- AI Chat -->
+            <div class="community-section" id="community-chat-section" style="margin-top:2rem">
+                <h2 class="community-section-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        style="width:24px;height:24px;color:var(--cyan)">
+                        <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
+                    </svg>
+                    Ask Our AI
+                </h2>
+                <p class="community-section-desc">Have questions about Medicaid fraud? Ask our AI in plain English — it
+                    knows all the findings from our investigation.</p>
+
+                <div class="community-chat-container">
+                    <div class="community-chat-messages" id="community-chat-messages">
+                        <div class="community-chat-msg community-chat-ai">
+                            <div class="community-chat-avatar">🤖</div>
+                            <div class="community-chat-bubble">
+                                <p>👋 Hi! I'm here to help you understand our Medicaid fraud investigation. You can ask
+                                    me things like:</p>
+                                <ul style="margin:.5rem 0 0 1rem;font-size:.85rem;color:var(--text-secondary)">
+                                    <li>"What did you find?"</li>
+                                    <li>"Are there any flagged providers in New Jersey?"</li>
+                                    <li>"What is a z-score?"</li>
+                                    <li>"How do I report suspected fraud?"</li>
+                                    <li>"Explain the worst offenders"</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="community-chat-input-area">
+                        <input type="text" id="community-chat-input"
+                            placeholder="Ask about fraud findings, specific areas, or how to report..."
+                            autocomplete="off">
+                        <button class="btn-community-send" onclick="communityChatSend()" id="community-chat-send-btn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 2L11 13" />
+                                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="community-chat-suggestions">
+                        <button class="btn-chat-suggest" onclick="communityChatQuick('What did you find?')">What did you
+                            find?</button>
+                        <button class="btn-chat-suggest" onclick="communityChatQuick('How do I report fraud?')">How to
+                            report fraud</button>
+                        <button class="btn-chat-suggest"
+                            onclick="communityChatQuick('Who are the worst offenders?')">Worst offenders</button>
+                        <button class="btn-chat-suggest"
+                            onclick="communityChatQuick('Is there fraud in my state?')">Fraud in my state</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Report Fraud -->
+            <div class="community-section" style="margin-top:2rem">
+                <h2 class="community-section-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        style="width:24px;height:24px;color:var(--red)">
+                        <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z" />
+                        <line x1="12" y1="9" x2="12" y2="13" />
+                        <line x1="12" y1="17" x2="12.01" y2="17" />
+                    </svg>
+                    Report Suspected Fraud
+                </h2>
+                <p class="community-section-desc">If you suspect Medicaid fraud, you can report it anonymously.
+                    Whistleblowers may receive 15-30% of recovered funds.</p>
+
+                <div class="community-report-grid">
+                    <div class="community-report-card federal">
+                        <div class="report-card-icon">🏛️</div>
+                        <h3>Federal Reporting</h3>
+                        <div class="report-card-contacts">
+                            <div class="report-contact"><strong>OIG Hotline</strong><span>1-800-HHS-TIPS</span></div>
+                            <div class="report-contact"><strong>OIG Online</strong><a href="https://tips.oig.hhs.gov"
+                                    target="_blank">tips.oig.hhs.gov</a></div>
+                            <div class="report-contact"><strong>FBI Newark</strong><span>(973) 792-3000</span></div>
+                            <div class="report-contact"><strong>FBI Tips</strong><a href="https://tips.fbi.gov"
+                                    target="_blank">tips.fbi.gov</a></div>
+                        </div>
+                    </div>
+                    <div class="community-report-card state">
+                        <div class="report-card-icon">🗽</div>
+                        <h3>NJ State Reporting</h3>
+                        <div class="report-card-contacts">
+                            <div class="report-contact"><strong>NJ AG MFCU</strong><span>(609) 292-8740</span></div>
+                            <div class="report-contact"><strong>Email</strong><a
+                                    href="mailto:medicaidfraud@njoag.gov">medicaidfraud@njoag.gov</a></div>
+                            <div class="report-contact"><strong>NJ DMAHS</strong><span>Provider Enrollment</span></div>
+                        </div>
+                    </div>
+                    <div class="community-report-card whistleblower">
+                        <div class="report-card-icon">💰</div>
+                        <h3>Whistleblower (Qui Tam)</h3>
+                        <div class="report-card-contacts">
+                            <div class="report-contact"><strong>False Claims Act</strong><span>31 U.S.C. § 3729</span>
+                            </div>
+                            <div class="report-contact"><strong>Recovery</strong><span>15-30% of funds</span></div>
+                            <div class="report-contact"><strong>Protection</strong><span>Anti-retaliation law</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Disclaimer -->
+            <div class="community-disclaimer">
+                <p><strong>Disclaimer:</strong> This platform presents data analysis findings from publicly available
+                    CMS Medicaid payment data. These findings do not constitute legal conclusions. All individuals and
+                    organizations are presumed innocent until proven otherwise through proper legal proceedings.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="/app.js"></script>
+    <elevenlabs-convai agent-id="agent_0001kcf3a94bfcm9kj51ss02gnv0"></elevenlabs-convai>
+    <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+</body>
+
+</html>

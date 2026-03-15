@@ -1,0 +1,31 @@
+{
+  "name": "medicaid-fraud-detection",
+  "version": "1.0.0",
+  "description": "AI-powered Medicaid fraud detection dashboard with Gemini integration",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "keywords": [
+    "fraud-detection",
+    "medicaid",
+    "gemini-ai",
+    "dashboard"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@google-cloud/documentai": "^9.5.0",
+    "@google/genai": "^1.41.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "google-auth-library": "^10.5.0",
+    "parquet-wasm": "^0.7.1"
+  }
+}

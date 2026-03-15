@@ -1,0 +1,39 @@
+# Dependencies
+node_modules/
+
+# Environment & secrets
+.env
+.env*.local
+service-account.json
+*.json.key
+
+# OS & editor
+.DS_Store
+.vscode/
+.idea/
+
+# Large data files (4GB+ parquet shards, PDFs, raw data)
+hf_dataset/
+request.json
+medicaid-provider-spending.csv
+nj_debarment_list.pdf
+medicaid_sample.pdf
+monthly-spending*
+
+# Generated/cached files
+fraud_analysis/vector_store.json
+fraud_analysis/docai_results/
+fraud_analysis/provider_reports/
+
+# Vercel
+.vercel/
+
+# But we DO track these critical analysis outputs:
+# fraud_analysis/statistical_analysis.json
+# fraud_analysis/enriched_providers.json
+# fraud_analysis/nj_deep_dive.json
+# fraud_analysis/debarment_cross_match.json
+# fraud_analysis/nj_culprit_dossiers.json
+# fraud_analysis/gemini_fraud_report.md
+# fraud_analysis/nj_fraud_report.md
+# fraud_analysis/nj_fraud_report_full.md

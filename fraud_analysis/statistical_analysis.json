@@ -1,0 +1,3990 @@
+{
+  "metadata": {
+    "total_rows": 227083361,
+    "total_providers": 617503,
+    "analysis_date": "2026-02-14T15:35:23.574947",
+    "self_referral_rows": 69731487,
+    "self_referral_pct": 30.71
+  },
+  "global_statistics": {
+    "mean_total_paid": 1770943.35,
+    "median_total_paid": 47823.19,
+    "std_total_paid": 22609456.22
+  },
+  "outlier_providers": [
+    {
+      "npi": "1417262056",
+      "total_paid": 7177816544.46,
+      "total_claims": "89773441",
+      "z_score": 317.39,
+      "unique_procedures": 25,
+      "procedures": [
+        "99199",
+        "A0090",
+        "A0160",
+        "G2021",
+        "H2016",
+        "H2021",
+        "S5125",
+        "S5126",
+        "S5130",
+        "S5135"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 79.95,
+      "claims_per_beneficiary_per_month": 1347.53,
+      "self_billing": true
+    },
+    {
+      "npi": "1699703827",
+      "total_paid": 6778483867.35,
+      "total_claims": "30870976",
+      "z_score": 299.73,
+      "unique_procedures": 117,
+      "procedures": [
+        "0250",
+        "0450",
+        "36415",
+        "71046",
+        "80048",
+        "80076",
+        "81001",
+        "81003",
+        "81025",
+        "83690"
+      ],
+      "months_active": 83,
+      "avg_payment_per_claim": 219.57,
+      "claims_per_beneficiary_per_month": 242.89,
+      "self_billing": true
+    },
+    {
+      "npi": "1376609297",
+      "total_paid": 5571605313.0,
+      "total_claims": "63523750",
+      "z_score": 246.35,
+      "unique_procedures": 5,
+      "procedures": [
+        "99509",
+        "T1019",
+        "T1020",
+        "T1023",
+        "T2022"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 87.71,
+      "claims_per_beneficiary_per_month": 1594.97,
+      "self_billing": true
+    },
+    {
+      "npi": "1699725143",
+      "total_paid": 3093063112.9,
+      "total_claims": "107716418",
+      "z_score": 136.73,
+      "unique_procedures": 44,
+      "procedures": [
+        "93005",
+        "93041",
+        "A0010",
+        "A0080",
+        "A0090",
+        "A0100",
+        "A0110",
+        "A0120",
+        "A0130",
+        "A0140"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 28.71,
+      "claims_per_beneficiary_per_month": 550.35,
+      "self_billing": true
+    },
+    {
+      "npi": "1922467554",
+      "total_paid": 3025874966.69,
+      "total_claims": "21977069",
+      "z_score": 133.75,
+      "unique_procedures": 6,
+      "procedures": [
+        "99199",
+        "S5125",
+        "T1019",
+        "T1020",
+        "T1022",
+        "T2024"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 137.68,
+      "claims_per_beneficiary_per_month": 1556.01,
+      "self_billing": true
+    },
+    {
+      "npi": "1710176151",
+      "total_paid": 2683634591.67,
+      "total_claims": "35557539",
+      "z_score": 118.62,
+      "unique_procedures": 68,
+      "procedures": [
+        "1019Z",
+        "1303Z",
+        "1520P",
+        "97124",
+        "99199",
+        "99429",
+        "99509",
+        "G9001",
+        "H0043",
+        "H0045"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 75.47,
+      "claims_per_beneficiary_per_month": 1223.57,
+      "self_billing": true
+    },
+    {
+      "npi": "1629436241",
+      "total_paid": 2596064454.98,
+      "total_claims": "16349155",
+      "z_score": 114.74,
+      "unique_procedures": 72,
+      "procedures": [
+        "A9279",
+        "D0120",
+        "D0140",
+        "D0150",
+        "D0160",
+        "D0210",
+        "D0220",
+        "D0230",
+        "D0240",
+        "D0270"
+      ],
+      "months_active": 78,
+      "avg_payment_per_claim": 158.79,
+      "claims_per_beneficiary_per_month": 1085.67,
+      "self_billing": true
+    },
+    {
+      "npi": "1982757688",
+      "total_paid": 2254946211.7,
+      "total_claims": "1950098",
+      "z_score": 99.66,
+      "unique_procedures": 21,
+      "procedures": [
+        "92507",
+        "97110",
+        "97535",
+        "H2014",
+        "H2019",
+        "H2021",
+        "S0215",
+        "S5135",
+        "S5150",
+        "S9124"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 1156.32,
+      "claims_per_beneficiary_per_month": 275.31,
+      "self_billing": true
+    },
+    {
+      "npi": "1538649983",
+      "total_paid": 2105798329.42,
+      "total_claims": "22162533",
+      "z_score": 93.06,
+      "unique_procedures": 5,
+      "procedures": [
+        "99199",
+        "G2021",
+        "S5126",
+        "S5136",
+        "S5150"
+      ],
+      "months_active": 78,
+      "avg_payment_per_claim": 95.02,
+      "claims_per_beneficiary_per_month": 1616.83,
+      "self_billing": true
+    },
+    {
+      "npi": "1528263910",
+      "total_paid": 1728502977.19,
+      "total_claims": "4656205",
+      "z_score": 76.37,
+      "unique_procedures": 59,
+      "procedures": [
+        "0241U",
+        "80051",
+        "80053",
+        "80076",
+        "81001",
+        "82565",
+        "82947",
+        "84520",
+        "85025",
+        "90785"
+      ],
+      "months_active": 82,
+      "avg_payment_per_claim": 371.23,
+      "claims_per_beneficiary_per_month": 236.1,
+      "self_billing": true
+    },
+    {
+      "npi": "1962650622",
+      "total_paid": 1682424022.37,
+      "total_claims": "11238391",
+      "z_score": 74.33,
+      "unique_procedures": 5,
+      "procedures": [
+        "G0162",
+        "T1001",
+        "T1019",
+        "T1020",
+        "T1030"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 149.7,
+      "claims_per_beneficiary_per_month": 2037.97,
+      "self_billing": true
+    },
+    {
+      "npi": "1720151046",
+      "total_paid": 1476339972.58,
+      "total_claims": "7928022",
+      "z_score": 65.22,
+      "unique_procedures": 11,
+      "procedures": [
+        "99082",
+        "S5125",
+        "S5126",
+        "S5130",
+        "S5135",
+        "S9122",
+        "T1019",
+        "T1020",
+        "T1022",
+        "T1030"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 186.22,
+      "claims_per_beneficiary_per_month": 1861.95,
+      "self_billing": true
+    },
+    {
+      "npi": "1356709976",
+      "total_paid": 1452536495.04,
+      "total_claims": "5287026",
+      "z_score": 64.17,
+      "unique_procedures": 53,
+      "procedures": [
+        "A9279",
+        "D0120",
+        "D0140",
+        "D0150",
+        "D0160",
+        "D0210",
+        "D0220",
+        "D0230",
+        "D0272",
+        "D0274"
+      ],
+      "months_active": 78,
+      "avg_payment_per_claim": 274.74,
+      "claims_per_beneficiary_per_month": 1058.58,
+      "self_billing": true
+    },
+    {
+      "npi": "1396051694",
+      "total_paid": 1442353043.54,
+      "total_claims": "9386423",
+      "z_score": 63.72,
+      "unique_procedures": 17,
+      "procedures": [
+        "90471",
+        "99080",
+        "99199",
+        "99213",
+        "G0162",
+        "S5130",
+        "S9122",
+        "S9123",
+        "S9127",
+        "S9131"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 153.66,
+      "claims_per_beneficiary_per_month": 1707.4,
+      "self_billing": true
+    },
+    {
+      "npi": "1538144910",
+      "total_paid": 1436181704.91,
+      "total_claims": "103910314",
+      "z_score": 63.44,
+      "unique_procedures": 747,
+      "procedures": [
+        "0001M",
+        "0003M",
+        "0014M",
+        "0024U",
+        "0097U",
+        "0099U",
+        "0202U",
+        "0241U",
+        "36415",
+        "36416"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 13.82,
+      "claims_per_beneficiary_per_month": 94.79,
+      "self_billing": true
+    },
+    {
+      "npi": "1447261540",
+      "total_paid": 1398902370.04,
+      "total_claims": "8714521",
+      "z_score": 61.79,
+      "unique_procedures": 82,
+      "procedures": [
+        "3074F",
+        "3075F",
+        "3077F",
+        "3078F",
+        "3079F",
+        "3080F",
+        "51729",
+        "51741",
+        "51797",
+        "81002"
+      ],
+      "months_active": 83,
+      "avg_payment_per_claim": 160.53,
+      "claims_per_beneficiary_per_month": 310.65,
+      "self_billing": true
+    },
+    {
+      "npi": "1750504064",
+      "total_paid": 1349935087.72,
+      "total_claims": "1662383",
+      "z_score": 59.63,
+      "unique_procedures": 16,
+      "procedures": [
+        "A0425",
+        "H0038",
+        "H2015",
+        "H2023",
+        "S5100",
+        "S5125",
+        "S5135",
+        "T1005",
+        "T2003",
+        "T2016"
+      ],
+      "months_active": 82,
+      "avg_payment_per_claim": 812.05,
+      "claims_per_beneficiary_per_month": 608.04,
+      "self_billing": true
+    },
+    {
+      "npi": "1417099789",
+      "total_paid": 1344222550.12,
+      "total_claims": "6184815",
+      "z_score": 59.38,
+      "unique_procedures": 61,
+      "procedures": [
+        "90785",
+        "90791",
+        "90792",
+        "90832",
+        "90834",
+        "90837",
+        "90847",
+        "90853",
+        "90885",
+        "96130"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 217.34,
+      "claims_per_beneficiary_per_month": 398.89,
+      "self_billing": true
+    },
+    {
+      "npi": "1073055208",
+      "total_paid": 1281885231.52,
+      "total_claims": "10541518",
+      "z_score": 56.62,
+      "unique_procedures": 39,
+      "procedures": [
+        "90791",
+        "90792",
+        "90832",
+        "90834",
+        "90837",
+        "90846",
+        "90847",
+        "90853",
+        "96136",
+        "96137"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 121.6,
+      "claims_per_beneficiary_per_month": 292.59,
+      "self_billing": true
+    },
+    {
+      "npi": "1376554592",
+      "total_paid": 1225040114.19,
+      "total_claims": "1593649",
+      "z_score": 54.1,
+      "unique_procedures": 5,
+      "procedures": [
+        "A0422",
+        "A0425",
+        "A0427",
+        "A0429",
+        "A0433"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 768.7,
+      "claims_per_beneficiary_per_month": 112.17,
+      "self_billing": true
+    },
+    {
+      "npi": "1518096411",
+      "total_paid": 1143418621.17,
+      "total_claims": "1557105",
+      "z_score": 50.49,
+      "unique_procedures": 13,
+      "procedures": [
+        "H0038",
+        "H2015",
+        "H2023",
+        "S5100",
+        "S5125",
+        "S5135",
+        "T2003",
+        "T2016",
+        "T2019",
+        "T2021"
+      ],
+      "months_active": 82,
+      "avg_payment_per_claim": 734.32,
+      "claims_per_beneficiary_per_month": 647.46,
+      "self_billing": true
+    },
+    {
+      "npi": "1700090834",
+      "total_paid": 1125938944.49,
+      "total_claims": "14999665",
+      "z_score": 49.72,
+      "unique_procedures": 37,
+      "procedures": [
+        "90791",
+        "90885",
+        "90889",
+        "96160",
+        "99202",
+        "99204",
+        "99205",
+        "99212",
+        "99214",
+        "99215"
+      ],
+      "months_active": 83,
+      "avg_payment_per_claim": 75.06,
+      "claims_per_beneficiary_per_month": 816.69,
+      "self_billing": true
+    },
+    {
+      "npi": "1780816991",
+      "total_paid": 1107509967.21,
+      "total_claims": "6915432",
+      "z_score": 48.91,
+      "unique_procedures": 10,
+      "procedures": [
+        "99199",
+        "G0162",
+        "S5125",
+        "S9123",
+        "T1001",
+        "T1019",
+        "T1020",
+        "T1022",
+        "T1030",
+        "T2024"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 160.15,
+      "claims_per_beneficiary_per_month": 1770.9,
+      "self_billing": true
+    },
+    {
+      "npi": "1275657553",
+      "total_paid": 1101806880.0,
+      "total_claims": "7622845",
+      "z_score": 48.65,
+      "unique_procedures": 9,
+      "procedures": [
+        "99082",
+        "99199",
+        "S5105",
+        "S5125",
+        "S5130",
+        "T1019",
+        "T1020",
+        "T1022",
+        "T1030"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 144.54,
+      "claims_per_beneficiary_per_month": 1694.6,
+      "self_billing": true
+    },
+    {
+      "npi": "1134250475",
+      "total_paid": 1097550708.19,
+      "total_claims": "1432892",
+      "z_score": 48.47,
+      "unique_procedures": 10,
+      "procedures": [
+        "H2015",
+        "H2023",
+        "S5100",
+        "S5125",
+        "S5135",
+        "T2003",
+        "T2016",
+        "T2019",
+        "T2021",
+        "T2023"
+      ],
+      "months_active": 82,
+      "avg_payment_per_claim": 765.97,
+      "claims_per_beneficiary_per_month": 453.57,
+      "self_billing": true
+    },
+    {
+      "npi": "1376097303",
+      "total_paid": 1081483692.76,
+      "total_claims": "6692707",
+      "z_score": 47.75,
+      "unique_procedures": 4,
+      "procedures": [
+        "99199",
+        "T1019",
+        "T1020",
+        "T1022"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 161.59,
+      "claims_per_beneficiary_per_month": 1848.02,
+      "self_billing": true
+    },
+    {
+      "npi": "1578778726",
+      "total_paid": 1080566062.71,
+      "total_claims": "23557851",
+      "z_score": 47.71,
+      "unique_procedures": 1431,
+      "procedures": [
+        "0001A",
+        "0002A",
+        "0003A",
+        "0004A",
+        "0011A",
+        "0012A",
+        "00170",
+        "0031A",
+        "0051A",
+        "0052A"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 45.87,
+      "claims_per_beneficiary_per_month": 113.75,
+      "self_billing": true
+    },
+    {
+      "npi": "1083783013",
+      "total_paid": 1077342251.7,
+      "total_claims": "5875713",
+      "z_score": 47.57,
+      "unique_procedures": 7,
+      "procedures": [
+        "S5125",
+        "S5126",
+        "S9122",
+        "T1019",
+        "T1020",
+        "T1022",
+        "T1023"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 183.36,
+      "claims_per_beneficiary_per_month": 1867.11,
+      "self_billing": true
+    },
+    {
+      "npi": "1326168840",
+      "total_paid": 1073667311.34,
+      "total_claims": "3312341",
+      "z_score": 47.41,
+      "unique_procedures": 3,
+      "procedures": [
+        "99361",
+        "T1018",
+        "T2023"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 324.14,
+      "claims_per_beneficiary_per_month": 447.52,
+      "self_billing": true
+    },
+    {
+      "npi": "1659402303",
+      "total_paid": 1068150354.86,
+      "total_claims": "6138417",
+      "z_score": 47.17,
+      "unique_procedures": 65,
+      "procedures": [
+        "90785",
+        "90791",
+        "90792",
+        "90832",
+        "90833",
+        "90834",
+        "90837",
+        "90838",
+        "90839",
+        "90840"
+      ],
+      "months_active": 76,
+      "avg_payment_per_claim": 174.01,
+      "claims_per_beneficiary_per_month": 369.22,
+      "self_billing": true
+    },
+    {
+      "npi": "1184703415",
+      "total_paid": 1061917965.84,
+      "total_claims": "5015054",
+      "z_score": 46.89,
+      "unique_procedures": 6,
+      "procedures": [
+        "99199",
+        "S5125",
+        "S5126",
+        "T1019",
+        "T1020",
+        "T1022"
+      ],
+      "months_active": 83,
+      "avg_payment_per_claim": 211.75,
+      "claims_per_beneficiary_per_month": 1826.3,
+      "self_billing": true
+    },
+    {
+      "npi": "1720145378",
+      "total_paid": 1061171577.13,
+      "total_claims": "10544174",
+      "z_score": 46.86,
+      "unique_procedures": 47,
+      "procedures": [
+        "99509",
+        "ESUP",
+        "G0226",
+        "G0227",
+        "G0228",
+        "G0749",
+        "G6063",
+        "H2015",
+        "H2021",
+        "H2025"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 100.64,
+      "claims_per_beneficiary_per_month": 1351.7,
+      "self_billing": true
+    },
+    {
+      "npi": "1194934471",
+      "total_paid": 1053552904.84,
+      "total_claims": "6532613",
+      "z_score": 46.52,
+      "unique_procedures": 58,
+      "procedures": [
+        "90791",
+        "90792",
+        "90832",
+        "90834",
+        "90837",
+        "90839",
+        "90847",
+        "90853",
+        "90887",
+        "96130"
+      ],
+      "months_active": 83,
+      "avg_payment_per_claim": 161.28,
+      "claims_per_beneficiary_per_month": 322.74,
+      "self_billing": true
+    },
+    {
+      "npi": "1396049987",
+      "total_paid": 1042893317.11,
+      "total_claims": "2757160",
+      "z_score": 46.05,
+      "unique_procedures": 17,
+      "procedures": [
+        "90791",
+        "90792",
+        "90832",
+        "90834",
+        "90837",
+        "90846",
+        "90847",
+        "90853",
+        "99215",
+        "H0004"
+      ],
+      "months_active": 63,
+      "avg_payment_per_claim": 378.25,
+      "claims_per_beneficiary_per_month": 723.2,
+      "self_billing": true
+    },
+    {
+      "npi": "1518098359",
+      "total_paid": 1037216238.4,
+      "total_claims": "11206578",
+      "z_score": 45.8,
+      "unique_procedures": 2,
+      "procedures": [
+        "99509",
+        "T1019"
+      ],
+      "months_active": 48,
+      "avg_payment_per_claim": 92.55,
+      "claims_per_beneficiary_per_month": 1259.18,
+      "self_billing": true
+    },
+    {
+      "npi": "1518049485",
+      "total_paid": 1025590031.98,
+      "total_claims": "5716218",
+      "z_score": 45.28,
+      "unique_procedures": 9,
+      "procedures": [
+        "99082",
+        "G0162",
+        "S5125",
+        "S5130",
+        "S5135",
+        "T1019",
+        "T1020",
+        "T1022",
+        "T1030"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 179.42,
+      "claims_per_beneficiary_per_month": 1640.45,
+      "self_billing": true
+    },
+    {
+      "npi": "1932341898",
+      "total_paid": 996801121.54,
+      "total_claims": "306131",
+      "z_score": 44.01,
+      "unique_procedures": 2,
+      "procedures": [
+        "H0044",
+        "T2028"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 3256.13,
+      "claims_per_beneficiary_per_month": 90.55,
+      "self_billing": true
+    },
+    {
+      "npi": "1952476988",
+      "total_paid": 961141901.37,
+      "total_claims": "17112336",
+      "z_score": 42.43,
+      "unique_procedures": 1445,
+      "procedures": [
+        "0001A",
+        "0002A",
+        "0003A",
+        "0011A",
+        "0012A",
+        "0013A",
+        "0031A",
+        "0051A",
+        "0053A",
+        "0054A"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 56.17,
+      "claims_per_beneficiary_per_month": 97.91,
+      "self_billing": true
+    },
+    {
+      "npi": "1457410904",
+      "total_paid": 953479646.08,
+      "total_claims": "5589304",
+      "z_score": 42.09,
+      "unique_procedures": 5,
+      "procedures": [
+        "S5126",
+        "S5135",
+        "T1019",
+        "T1020",
+        "T1030"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 170.59,
+      "claims_per_beneficiary_per_month": 1861.06,
+      "self_billing": true
+    },
+    {
+      "npi": "1093834020",
+      "total_paid": 910633453.06,
+      "total_claims": "51017667",
+      "z_score": 40.2,
+      "unique_procedures": 17,
+      "procedures": [
+        "1218Z",
+        "1220Z",
+        "1550P",
+        "1551P",
+        "99199",
+        "99368",
+        "A5120",
+        "H2032",
+        "S5170",
+        "S9433"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 17.85,
+      "claims_per_beneficiary_per_month": 940.49,
+      "self_billing": true
+    },
+    {
+      "npi": "1043386659",
+      "total_paid": 903144307.96,
+      "total_claims": "4320082",
+      "z_score": 39.87,
+      "unique_procedures": 56,
+      "procedures": [
+        "3008F",
+        "3074F",
+        "3078F",
+        "3079F",
+        "90460",
+        "90461",
+        "90686",
+        "90785",
+        "90791",
+        "90792"
+      ],
+      "months_active": 83,
+      "avg_payment_per_claim": 209.06,
+      "claims_per_beneficiary_per_month": 193.65,
+      "self_billing": true
+    },
+    {
+      "npi": "1134260078",
+      "total_paid": 894406192.52,
+      "total_claims": "34388480",
+      "z_score": 39.48,
+      "unique_procedures": 21,
+      "procedures": [
+        "A0080",
+        "A0090",
+        "A0100",
+        "A0110",
+        "A0130",
+        "A0170",
+        "A0180",
+        "A0190",
+        "A0200",
+        "A0210"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 26.01,
+      "claims_per_beneficiary_per_month": 574.33,
+      "self_billing": true
+    },
+    {
+      "npi": "1124304621",
+      "total_paid": 887501813.41,
+      "total_claims": "5599208",
+      "z_score": 39.18,
+      "unique_procedures": 2,
+      "procedures": [
+        "T2025",
+        "T2040"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 158.5,
+      "claims_per_beneficiary_per_month": 1010.87,
+      "self_billing": true
+    },
+    {
+      "npi": "1245354000",
+      "total_paid": 881889979.78,
+      "total_claims": "781227",
+      "z_score": 38.93,
+      "unique_procedures": 15,
+      "procedures": [
+        "H0045",
+        "H2015",
+        "H2016",
+        "H2023",
+        "S5100",
+        "S5125",
+        "S5135",
+        "T2003",
+        "T2016",
+        "T2019"
+      ],
+      "months_active": 82,
+      "avg_payment_per_claim": 1128.85,
+      "claims_per_beneficiary_per_month": 463.32,
+      "self_billing": true
+    },
+    {
+      "npi": "1871821710",
+      "total_paid": 865877079.43,
+      "total_claims": "4759464",
+      "z_score": 38.22,
+      "unique_procedures": 6,
+      "procedures": [
+        "99199",
+        "S5125",
+        "T1019",
+        "T1020",
+        "T1022",
+        "T1030"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 181.93,
+      "claims_per_beneficiary_per_month": 1653.19,
+      "self_billing": true
+    },
+    {
+      "npi": "1679525919",
+      "total_paid": 863549395.76,
+      "total_claims": "16016267",
+      "z_score": 38.12,
+      "unique_procedures": 1579,
+      "procedures": [
+        "0001A",
+        "0002A",
+        "0003A",
+        "0004A",
+        "00104",
+        "00120",
+        "00126",
+        "00140",
+        "00142",
+        "00145"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 53.92,
+      "claims_per_beneficiary_per_month": 103.9,
+      "self_billing": true
+    },
+    {
+      "npi": "1053321869",
+      "total_paid": 858202022.04,
+      "total_claims": "14797415",
+      "z_score": 37.88,
+      "unique_procedures": 8,
+      "procedures": [
+        "G9006",
+        "S5125",
+        "S5165",
+        "S9124",
+        "T1005",
+        "T1019",
+        "T2017",
+        "T2022"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 58.0,
+      "claims_per_beneficiary_per_month": 1606.47,
+      "self_billing": true
+    },
+    {
+      "npi": "1033571658",
+      "total_paid": 848211431.1,
+      "total_claims": "5704959",
+      "z_score": 37.44,
+      "unique_procedures": 4,
+      "procedures": [
+        "99199",
+        "T1019",
+        "T1020",
+        "T1022"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 148.68,
+      "claims_per_beneficiary_per_month": 1903.76,
+      "self_billing": true
+    },
+    {
+      "npi": "1801060363",
+      "total_paid": 842517560.21,
+      "total_claims": "5447800",
+      "z_score": 37.19,
+      "unique_procedures": 6,
+      "procedures": [
+        "99199",
+        "T1001",
+        "T1019",
+        "T1020",
+        "T1022",
+        "T1030"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 154.65,
+      "claims_per_beneficiary_per_month": 1828.22,
+      "self_billing": true
+    },
+    {
+      "npi": "1730438706",
+      "total_paid": 840475278.04,
+      "total_claims": "4928110",
+      "z_score": 37.1,
+      "unique_procedures": 7,
+      "procedures": [
+        "99199",
+        "S5125",
+        "S5130",
+        "T1019",
+        "T1020",
+        "T1022",
+        "T1030"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 170.55,
+      "claims_per_beneficiary_per_month": 1821.76,
+      "self_billing": true
+    },
+    {
+      "npi": "1104963347",
+      "total_paid": 806659263.46,
+      "total_claims": "4933775",
+      "z_score": 35.6,
+      "unique_procedures": 75,
+      "procedures": [
+        "90785",
+        "90791",
+        "90792",
+        "90832",
+        "90834",
+        "90837",
+        "90839",
+        "90840",
+        "90847",
+        "90853"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 163.5,
+      "claims_per_beneficiary_per_month": 266.53,
+      "self_billing": true
+    },
+    {
+      "npi": "1124494059",
+      "total_paid": 780976224.27,
+      "total_claims": "910831",
+      "z_score": 34.46,
+      "unique_procedures": 1,
+      "procedures": [
+        "T2023"
+      ],
+      "months_active": 65,
+      "avg_payment_per_claim": 857.43,
+      "claims_per_beneficiary_per_month": 67.43,
+      "self_billing": true
+    },
+    {
+      "npi": "1134152986",
+      "total_paid": 777537649.43,
+      "total_claims": "11019261",
+      "z_score": 34.31,
+      "unique_procedures": 913,
+      "procedures": [
+        "00120",
+        "00126",
+        "00140",
+        "00160",
+        "00170",
+        "00300",
+        "00320",
+        "00400",
+        "00520",
+        "00635"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 70.56,
+      "claims_per_beneficiary_per_month": 108.37,
+      "self_billing": true
+    },
+    {
+      "npi": "1770022691",
+      "total_paid": 775248390.58,
+      "total_claims": "5661079",
+      "z_score": 34.21,
+      "unique_procedures": 4,
+      "procedures": [
+        "99199",
+        "T1019",
+        "T1020",
+        "T1022"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 136.94,
+      "claims_per_beneficiary_per_month": 1796.6,
+      "self_billing": true
+    },
+    {
+      "npi": "1346218294",
+      "total_paid": 768481072.41,
+      "total_claims": "14457145",
+      "z_score": 33.91,
+      "unique_procedures": 1247,
+      "procedures": [
+        "0001A",
+        "0002A",
+        "0003A",
+        "0004A",
+        "0011A",
+        "0012A",
+        "0013A",
+        "0031A",
+        "0034A",
+        "0051A"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 53.16,
+      "claims_per_beneficiary_per_month": 96.92,
+      "self_billing": true
+    },
+    {
+      "npi": "1457562811",
+      "total_paid": 767950561.97,
+      "total_claims": "4839538",
+      "z_score": 33.89,
+      "unique_procedures": 7,
+      "procedures": [
+        "G0162",
+        "S9123",
+        "T1019",
+        "T1020",
+        "T1022",
+        "T1030",
+        "T2024"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 158.68,
+      "claims_per_beneficiary_per_month": 2003.36,
+      "self_billing": true
+    },
+    {
+      "npi": "1184166027",
+      "total_paid": 759749435.75,
+      "total_claims": "6527516",
+      "z_score": 33.52,
+      "unique_procedures": 44,
+      "procedures": [
+        "90791",
+        "90792",
+        "90832",
+        "90834",
+        "90837",
+        "90846",
+        "90847",
+        "90853",
+        "96101",
+        "96130"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 116.39,
+      "claims_per_beneficiary_per_month": 281.82,
+      "self_billing": true
+    },
+    {
+      "npi": "1528338282",
+      "total_paid": 759480229.5,
+      "total_claims": "4827072",
+      "z_score": 33.51,
+      "unique_procedures": 4,
+      "procedures": [
+        "99199",
+        "T1019",
+        "T1020",
+        "T1022"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 157.34,
+      "claims_per_beneficiary_per_month": 1754.87,
+      "self_billing": true
+    },
+    {
+      "npi": "1447393319",
+      "total_paid": 745668883.76,
+      "total_claims": "4169477",
+      "z_score": 32.9,
+      "unique_procedures": 6,
+      "procedures": [
+        "99199",
+        "S5125",
+        "S5126",
+        "S5130",
+        "T1019",
+        "T1020"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 178.84,
+      "claims_per_beneficiary_per_month": 1804.89,
+      "self_billing": true
+    },
+    {
+      "npi": "1528315397",
+      "total_paid": 740001913.97,
+      "total_claims": "4689038",
+      "z_score": 32.65,
+      "unique_procedures": 7,
+      "procedures": [
+        "99199",
+        "S5125",
+        "S9123",
+        "T1019",
+        "T1020",
+        "T1022",
+        "T1030"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 157.82,
+      "claims_per_beneficiary_per_month": 2002.91,
+      "self_billing": true
+    },
+    {
+      "npi": "1821275801",
+      "total_paid": 737824812.56,
+      "total_claims": "4166637",
+      "z_score": 32.56,
+      "unique_procedures": 4,
+      "procedures": [
+        "S5130",
+        "T1019",
+        "T1020",
+        "T1030"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 177.08,
+      "claims_per_beneficiary_per_month": 1814.92,
+      "self_billing": true
+    },
+    {
+      "npi": "1992920417",
+      "total_paid": 733082656.72,
+      "total_claims": "9313474",
+      "z_score": 32.35,
+      "unique_procedures": 4,
+      "procedures": [
+        "99509",
+        "T1019",
+        "T1020",
+        "T2022"
+      ],
+      "months_active": 48,
+      "avg_payment_per_claim": 78.71,
+      "claims_per_beneficiary_per_month": 812.54,
+      "self_billing": true
+    },
+    {
+      "npi": "1770538001",
+      "total_paid": 728111212.47,
+      "total_claims": "3034929",
+      "z_score": 32.13,
+      "unique_procedures": 52,
+      "procedures": [
+        "90785",
+        "90791",
+        "90792",
+        "90832",
+        "90834",
+        "90837",
+        "90845",
+        "90847",
+        "90853",
+        "90885"
+      ],
+      "months_active": 79,
+      "avg_payment_per_claim": 239.91,
+      "claims_per_beneficiary_per_month": 160.78,
+      "self_billing": true
+    },
+    {
+      "npi": "1457601965",
+      "total_paid": 723937836.8,
+      "total_claims": "26606071",
+      "z_score": 31.94,
+      "unique_procedures": 18,
+      "procedures": [
+        "A0100",
+        "A0110",
+        "A0120",
+        "A0130",
+        "A0380",
+        "A0390",
+        "A0420",
+        "A0422",
+        "A0424",
+        "A0425"
+      ],
+      "months_active": 73,
+      "avg_payment_per_claim": 27.21,
+      "claims_per_beneficiary_per_month": 578.31,
+      "self_billing": true
+    },
+    {
+      "npi": "1063497451",
+      "total_paid": 717466640.82,
+      "total_claims": "109455732",
+      "z_score": 31.65,
+      "unique_procedures": 712,
+      "procedures": [
+        "0001M",
+        "0003M",
+        "0014M",
+        "0024U",
+        "0097U",
+        "0099U",
+        "0202U",
+        "0241U",
+        "36415",
+        "36416"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 6.55,
+      "claims_per_beneficiary_per_month": 90.42,
+      "self_billing": true
+    },
+    {
+      "npi": "1518911338",
+      "total_paid": 716407787.9,
+      "total_claims": "8817197",
+      "z_score": 31.61,
+      "unique_procedures": 1220,
+      "procedures": [
+        "0054A",
+        "0081A",
+        "0296T",
+        "0346T",
+        "0399T",
+        "0556T",
+        "10005",
+        "10022",
+        "10060",
+        "11042"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 81.25,
+      "claims_per_beneficiary_per_month": 107.7,
+      "self_billing": true
+    },
+    {
+      "npi": "1063812105",
+      "total_paid": 714231712.54,
+      "total_claims": "5318854",
+      "z_score": 31.51,
+      "unique_procedures": 3,
+      "procedures": [
+        "T1019",
+        "T1020",
+        "T1022"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 134.28,
+      "claims_per_beneficiary_per_month": 1862.29,
+      "self_billing": true
+    },
+    {
+      "npi": "1104253558",
+      "total_paid": 708682479.28,
+      "total_claims": "8270331",
+      "z_score": 31.27,
+      "unique_procedures": 14,
+      "procedures": [
+        "1021Z",
+        "1023Z",
+        "1210Z",
+        "1214Z",
+        "H2016",
+        "H2021",
+        "S5125",
+        "S5161",
+        "T1001",
+        "T1002"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 85.69,
+      "claims_per_beneficiary_per_month": 1725.11,
+      "self_billing": true
+    },
+    {
+      "npi": "1407897309",
+      "total_paid": 708859553.08,
+      "total_claims": "9991272",
+      "z_score": 31.27,
+      "unique_procedures": 813,
+      "procedures": [
+        "0001A",
+        "0002A",
+        "0003A",
+        "0004A",
+        "00104",
+        "0011A",
+        "0012A",
+        "00142",
+        "00170",
+        "0031A"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 70.95,
+      "claims_per_beneficiary_per_month": 113.98,
+      "self_billing": true
+    },
+    {
+      "npi": "1952346876",
+      "total_paid": 708513856.49,
+      "total_claims": "1626136",
+      "z_score": 31.26,
+      "unique_procedures": 18,
+      "procedures": [
+        "92507",
+        "92523",
+        "92526",
+        "97110",
+        "97162",
+        "97164",
+        "97166",
+        "97168",
+        "97530",
+        "G0299"
+      ],
+      "months_active": 65,
+      "avg_payment_per_claim": 435.7,
+      "claims_per_beneficiary_per_month": 910.84,
+      "self_billing": true
+    },
+    {
+      "npi": "1932106010",
+      "total_paid": 703738514.8,
+      "total_claims": "3291802",
+      "z_score": 31.05,
+      "unique_procedures": 9,
+      "procedures": [
+        "99199",
+        "G0162",
+        "S5125",
+        "S5126",
+        "S5135",
+        "S9122",
+        "T1019",
+        "T1020",
+        "T1022"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 213.79,
+      "claims_per_beneficiary_per_month": 1889.72,
+      "self_billing": true
+    },
+    {
+      "npi": "1730244294",
+      "total_paid": 696610298.1,
+      "total_claims": "3803723",
+      "z_score": 30.73,
+      "unique_procedures": 7,
+      "procedures": [
+        "99199",
+        "S5125",
+        "S5126",
+        "S5130",
+        "T1019",
+        "T1020",
+        "T1022"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 183.14,
+      "claims_per_beneficiary_per_month": 1922.29,
+      "self_billing": true
+    },
+    {
+      "npi": "1649363342",
+      "total_paid": 686260064.07,
+      "total_claims": "3665321",
+      "z_score": 30.27,
+      "unique_procedures": 10,
+      "procedures": [
+        "97161",
+        "G0406",
+        "S9110",
+        "S9123",
+        "S9131",
+        "T1019",
+        "T1020",
+        "T1022",
+        "T1030",
+        "T2024"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 187.23,
+      "claims_per_beneficiary_per_month": 1732.25,
+      "self_billing": true
+    },
+    {
+      "npi": "1265926687",
+      "total_paid": 680727558.69,
+      "total_claims": "4947130",
+      "z_score": 30.03,
+      "unique_procedures": 8,
+      "procedures": [
+        "99080",
+        "99199",
+        "G0162",
+        "T1001",
+        "T1019",
+        "T1020",
+        "T1022",
+        "T1030"
+      ],
+      "months_active": 77,
+      "avg_payment_per_claim": 137.6,
+      "claims_per_beneficiary_per_month": 1469.06,
+      "self_billing": true
+    },
+    {
+      "npi": "1366479099",
+      "total_paid": 668499553.82,
+      "total_claims": "111637602",
+      "z_score": 29.49,
+      "unique_procedures": 708,
+      "procedures": [
+        "0001M",
+        "0014M",
+        "0241U",
+        "0346U",
+        "3008F",
+        "3044F",
+        "3046F",
+        "3048F",
+        "3049F",
+        "3050F"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 5.99,
+      "claims_per_beneficiary_per_month": 86.7,
+      "self_billing": true
+    },
+    {
+      "npi": "1194165985",
+      "total_paid": 667442680.69,
+      "total_claims": "3944870",
+      "z_score": 29.44,
+      "unique_procedures": 11,
+      "procedures": [
+        "99199",
+        "G0162",
+        "S5125",
+        "S5126",
+        "T1001",
+        "T1019",
+        "T1020",
+        "T1021",
+        "T1022",
+        "T1030"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 169.19,
+      "claims_per_beneficiary_per_month": 1566.84,
+      "self_billing": true
+    },
+    {
+      "npi": "1437175734",
+      "total_paid": 658485314.25,
+      "total_claims": "8471931",
+      "z_score": 29.05,
+      "unique_procedures": 1217,
+      "procedures": [
+        "0001A",
+        "0002A",
+        "0003A",
+        "0004A",
+        "0011A",
+        "0012A",
+        "0013A",
+        "0031A",
+        "0042T",
+        "0064U"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 77.73,
+      "claims_per_beneficiary_per_month": 113.11,
+      "self_billing": true
+    },
+    {
+      "npi": "1730491945",
+      "total_paid": 643184712.3,
+      "total_claims": "7838014",
+      "z_score": 28.37,
+      "unique_procedures": 162,
+      "procedures": [
+        "0011A",
+        "0012A",
+        "10060",
+        "10061",
+        "10120",
+        "10160",
+        "1036F",
+        "1160F",
+        "11740",
+        "11750"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 82.06,
+      "claims_per_beneficiary_per_month": 90.46,
+      "self_billing": true
+    },
+    {
+      "npi": "1225255375",
+      "total_paid": 642451488.14,
+      "total_claims": "5455305",
+      "z_score": 28.34,
+      "unique_procedures": 72,
+      "procedures": [
+        "0001A",
+        "0002A",
+        "0011A",
+        "0012A",
+        "0013A",
+        "0053A",
+        "0160",
+        "71010",
+        "71045",
+        "86580"
+      ],
+      "months_active": 82,
+      "avg_payment_per_claim": 117.77,
+      "claims_per_beneficiary_per_month": 413.23,
+      "self_billing": true
+    },
+    {
+      "npi": "1558672279",
+      "total_paid": 641511859.92,
+      "total_claims": "7257656",
+      "z_score": 28.3,
+      "unique_procedures": 61,
+      "procedures": [
+        "0060U",
+        "0340U",
+        "36415",
+        "80500",
+        "81161",
+        "81162",
+        "81200",
+        "81205",
+        "81209",
+        "81210"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 88.39,
+      "claims_per_beneficiary_per_month": 94.79,
+      "self_billing": true
+    },
+    {
+      "npi": "1932145778",
+      "total_paid": 637741416.64,
+      "total_claims": "57184397",
+      "z_score": 28.13,
+      "unique_procedures": 684,
+      "procedures": [
+        "0001M",
+        "0241U",
+        "0346U",
+        "3044F",
+        "3046F",
+        "3048F",
+        "3049F",
+        "3050F",
+        "3051F",
+        "3052F"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 11.15,
+      "claims_per_beneficiary_per_month": 88.05,
+      "self_billing": true
+    },
+    {
+      "npi": "1447488721",
+      "total_paid": 636580818.96,
+      "total_claims": "3446648",
+      "z_score": 28.08,
+      "unique_procedures": 6,
+      "procedures": [
+        "99199",
+        "G0162",
+        "T1019",
+        "T1020",
+        "T1022",
+        "T1030"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 184.7,
+      "claims_per_beneficiary_per_month": 2067.9,
+      "self_billing": true
+    },
+    {
+      "npi": "1326111337",
+      "total_paid": 631608444.85,
+      "total_claims": "10763744",
+      "z_score": 27.86,
+      "unique_procedures": 15,
+      "procedures": [
+        "S5102",
+        "S5121",
+        "S5130",
+        "S5135",
+        "S5150",
+        "S5160",
+        "S5161",
+        "S5165",
+        "S5170",
+        "T1001"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 58.68,
+      "claims_per_beneficiary_per_month": 482.39,
+      "self_billing": true
+    },
+    {
+      "npi": "1801027404",
+      "total_paid": 624768225.25,
+      "total_claims": "3406847",
+      "z_score": 27.55,
+      "unique_procedures": 36,
+      "procedures": [
+        "D0140",
+        "G0226",
+        "G0227",
+        "G0228",
+        "G0718",
+        "G0749",
+        "G6063",
+        "G6064",
+        "H2015",
+        "H2038"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 183.39,
+      "claims_per_beneficiary_per_month": 477.47,
+      "self_billing": true
+    },
+    {
+      "npi": "1134277494",
+      "total_paid": 620067105.66,
+      "total_claims": "60790152",
+      "z_score": 27.35,
+      "unique_procedures": 626,
+      "procedures": [
+        "0099U",
+        "0202U",
+        "36415",
+        "80047",
+        "80048",
+        "80050",
+        "80051",
+        "80053",
+        "80055",
+        "80061"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 10.2,
+      "claims_per_beneficiary_per_month": 86.57,
+      "self_billing": true
+    },
+    {
+      "npi": "1932184322",
+      "total_paid": 617017961.77,
+      "total_claims": "53462000",
+      "z_score": 27.21,
+      "unique_procedures": 566,
+      "procedures": [
+        "0202U",
+        "36415",
+        "36416",
+        "80048",
+        "80050",
+        "80051",
+        "80053",
+        "80055",
+        "80061",
+        "80069"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 11.54,
+      "claims_per_beneficiary_per_month": 93.6,
+      "self_billing": true
+    },
+    {
+      "npi": "1306875695",
+      "total_paid": 615308759.58,
+      "total_claims": "790946",
+      "z_score": 27.14,
+      "unique_procedures": 30,
+      "procedures": [
+        "90791",
+        "90837",
+        "90846",
+        "90847",
+        "99204",
+        "99213",
+        "99214",
+        "H0019",
+        "H0023",
+        "H0031"
+      ],
+      "months_active": 83,
+      "avg_payment_per_claim": 777.94,
+      "claims_per_beneficiary_per_month": 304.02,
+      "self_billing": true
+    },
+    {
+      "npi": "1518259035",
+      "total_paid": 609810517.82,
+      "total_claims": "3502099",
+      "z_score": 26.89,
+      "unique_procedures": 6,
+      "procedures": [
+        "S5125",
+        "S5130",
+        "S9124",
+        "T1019",
+        "T1020",
+        "T1030"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 174.13,
+      "claims_per_beneficiary_per_month": 1551.55,
+      "self_billing": true
+    },
+    {
+      "npi": "1932721834",
+      "total_paid": 606657803.13,
+      "total_claims": "5766334",
+      "z_score": 26.75,
+      "unique_procedures": 6,
+      "procedures": [
+        "S5125",
+        "S5135",
+        "S5150",
+        "S5151",
+        "T2016",
+        "T2017"
+      ],
+      "months_active": 65,
+      "avg_payment_per_claim": 105.21,
+      "claims_per_beneficiary_per_month": 951.31,
+      "self_billing": true
+    },
+    {
+      "npi": "1861520272",
+      "total_paid": 600905872.13,
+      "total_claims": "17581374",
+      "z_score": 26.5,
+      "unique_procedures": 20,
+      "procedures": [
+        "A0090",
+        "A0100",
+        "A0110",
+        "A0120",
+        "A0130",
+        "A0170",
+        "A0180",
+        "A0190",
+        "A0200",
+        "A0210"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 34.18,
+      "claims_per_beneficiary_per_month": 623.6,
+      "self_billing": true
+    },
+    {
+      "npi": "1245414721",
+      "total_paid": 598860245.02,
+      "total_claims": "7464255",
+      "z_score": 26.41,
+      "unique_procedures": 2,
+      "procedures": [
+        "S5140",
+        "T1028"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 80.23,
+      "claims_per_beneficiary_per_month": 2341.37,
+      "self_billing": true
+    },
+    {
+      "npi": "1508199258",
+      "total_paid": 598198692.3,
+      "total_claims": "3115644",
+      "z_score": 26.38,
+      "unique_procedures": 58,
+      "procedures": [
+        "90785",
+        "90791",
+        "90792",
+        "90832",
+        "90834",
+        "90837",
+        "90847",
+        "90849",
+        "90853",
+        "96127"
+      ],
+      "months_active": 82,
+      "avg_payment_per_claim": 192.0,
+      "claims_per_beneficiary_per_month": 234.81,
+      "self_billing": true
+    },
+    {
+      "npi": "1053641498",
+      "total_paid": 590623456.31,
+      "total_claims": "2755271",
+      "z_score": 26.04,
+      "unique_procedures": 34,
+      "procedures": [
+        "0359T",
+        "0364T",
+        "0365T",
+        "0368T",
+        "0369T",
+        "0370T",
+        "0373T",
+        "0374T",
+        "92507",
+        "96101"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 214.36,
+      "claims_per_beneficiary_per_month": 646.96,
+      "self_billing": true
+    },
+    {
+      "npi": "1003953803",
+      "total_paid": 588362360.46,
+      "total_claims": "3013352",
+      "z_score": 25.94,
+      "unique_procedures": 5,
+      "procedures": [
+        "G0162",
+        "T1001",
+        "T1019",
+        "T1020",
+        "T1030"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 195.25,
+      "claims_per_beneficiary_per_month": 1922.55,
+      "self_billing": true
+    },
+    {
+      "npi": "1497933162",
+      "total_paid": 579294569.06,
+      "total_claims": "30684871",
+      "z_score": 25.54,
+      "unique_procedures": 72,
+      "procedures": [
+        "80301",
+        "80307",
+        "80321",
+        "80323",
+        "80324",
+        "80325",
+        "80326",
+        "80332",
+        "80333",
+        "80334"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 18.88,
+      "claims_per_beneficiary_per_month": 169.44,
+      "self_billing": true
+    },
+    {
+      "npi": "1508025370",
+      "total_paid": 576959418.11,
+      "total_claims": "3902694",
+      "z_score": 25.44,
+      "unique_procedures": 3,
+      "procedures": [
+        "T1019",
+        "T1020",
+        "T1030"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 147.84,
+      "claims_per_beneficiary_per_month": 1666.77,
+      "self_billing": true
+    },
+    {
+      "npi": "1700828852",
+      "total_paid": 574131419.67,
+      "total_claims": "10961069",
+      "z_score": 25.32,
+      "unique_procedures": 1117,
+      "procedures": [
+        "0001A",
+        "0002A",
+        "0003A",
+        "0004A",
+        "0011A",
+        "00126",
+        "0012A",
+        "0013A",
+        "00140",
+        "00142"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 52.38,
+      "claims_per_beneficiary_per_month": 103.9,
+      "self_billing": true
+    },
+    {
+      "npi": "1891728697",
+      "total_paid": 571724616.59,
+      "total_claims": "9598455",
+      "z_score": 25.21,
+      "unique_procedures": 169,
+      "procedures": [
+        "94660",
+        "94799",
+        "99199",
+        "99503",
+        "A4213",
+        "A4217",
+        "A4239",
+        "A4281",
+        "A4282",
+        "A4283"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 59.56,
+      "claims_per_beneficiary_per_month": 96.8,
+      "self_billing": true
+    },
+    {
+      "npi": "1720121106",
+      "total_paid": 560383490.86,
+      "total_claims": "1802919",
+      "z_score": 24.71,
+      "unique_procedures": 29,
+      "procedures": [
+        "92507",
+        "92508",
+        "96153",
+        "96164",
+        "96165",
+        "97110",
+        "97129",
+        "97130",
+        "97150",
+        "97535"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 310.82,
+      "claims_per_beneficiary_per_month": 1310.09,
+      "self_billing": true
+    },
+    {
+      "npi": "1083765689",
+      "total_paid": 559483344.48,
+      "total_claims": "11242943",
+      "z_score": 24.67,
+      "unique_procedures": 53,
+      "procedures": [
+        "90791",
+        "90792",
+        "90832",
+        "90834",
+        "90837",
+        "90846",
+        "90847",
+        "90853",
+        "92523",
+        "96101"
+      ],
+      "months_active": 84,
+      "avg_payment_per_claim": 49.76,
+      "claims_per_beneficiary_per_month": 235.66,
+      "self_billing": true
+    }
+  ],
+  "benford_analysis": {
+    "compliant": true,
+    "chi_squared": 0.0012,
+    "digit_deviations": {
+      "1": {
+        "observed": 0.3147,
+        "expected": 0.301,
+        "deviation": 0.0137
+      },
+      "2": {
+        "observed": 0.1741,
+        "expected": 0.176,
+        "deviation": 0.0019
+      },
+      "3": {
+        "observed": 0.1197,
+        "expected": 0.125,
+        "deviation": 0.0053
+      },
+      "4": {
+        "observed": 0.0926,
+        "expected": 0.097,
+        "deviation": 0.0044
+      },
+      "5": {
+        "observed": 0.0762,
+        "expected": 0.079,
+        "deviation": 0.0028
+      },
+      "6": {
+        "observed": 0.0657,
+        "expected": 0.067,
+        "deviation": 0.0013
+      },
+      "7": {
+        "observed": 0.0578,
+        "expected": 0.058,
+        "deviation": 0.0002
+      },
+      "8": {
+        "observed": 0.0517,
+        "expected": 0.051,
+        "deviation": 0.0007
+      },
+      "9": {
+        "observed": 0.0474,
+        "expected": 0.046,
+        "deviation": 0.0014
+      }
+    },
+    "message": "PASS: Payment amounts follow Benford's Law"
+  },
+  "temporal_anomalies": [
+    {
+      "provider_npi": "1003000969",
+      "month": "2019-01",
+      "payment": 128025.84,
+      "z_score": 7.11,
+      "provider_mean": 3817.29,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003000969",
+      "month": "2019-03",
+      "payment": 131405.49,
+      "z_score": 7.3,
+      "provider_mean": 3817.29,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003000969",
+      "month": "2019-04",
+      "payment": 125394.49,
+      "z_score": 6.96,
+      "provider_mean": 3817.29,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003000969",
+      "month": "2020-07",
+      "payment": 134014.04,
+      "z_score": 7.45,
+      "provider_mean": 3817.29,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003000969",
+      "month": "2021-03",
+      "payment": 188991.79,
+      "z_score": 10.6,
+      "provider_mean": 3817.29,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003000969",
+      "month": "2021-04",
+      "payment": 182412.92,
+      "z_score": 10.23,
+      "provider_mean": 3817.29,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003000969",
+      "month": "2021-06",
+      "payment": 184906.69,
+      "z_score": 10.37,
+      "provider_mean": 3817.29,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003000969",
+      "month": "2021-08",
+      "payment": 181465.98,
+      "z_score": 10.17,
+      "provider_mean": 3817.29,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003000969",
+      "month": "2022-03",
+      "payment": 190037.77,
+      "z_score": 10.66,
+      "provider_mean": 3817.29,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003000969",
+      "month": "2022-07",
+      "payment": 134365.82,
+      "z_score": 7.47,
+      "provider_mean": 3817.29,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003000969",
+      "month": "2022-08",
+      "payment": 57385.69,
+      "z_score": 3.07,
+      "provider_mean": 3817.29,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003006180",
+      "month": "2018-01",
+      "payment": 501286.9,
+      "z_score": 8.53,
+      "provider_mean": 17354.93,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003006180",
+      "month": "2018-07",
+      "payment": 377141.97,
+      "z_score": 6.34,
+      "provider_mean": 17354.93,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003006180",
+      "month": "2018-08",
+      "payment": 381360.46,
+      "z_score": 6.41,
+      "provider_mean": 17354.93,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003006180",
+      "month": "2019-08",
+      "payment": 384296.23,
+      "z_score": 6.47,
+      "provider_mean": 17354.93,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003006180",
+      "month": "2021-07",
+      "payment": 382664.77,
+      "z_score": 6.44,
+      "provider_mean": 17354.93,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003010042",
+      "month": "2018-02",
+      "payment": 128352.2,
+      "z_score": 5.31,
+      "provider_mean": 6957.29,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003010042",
+      "month": "2018-05",
+      "payment": 90142.5,
+      "z_score": 3.64,
+      "provider_mean": 6957.29,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003010042",
+      "month": "2018-08",
+      "payment": 87460.36,
+      "z_score": 3.52,
+      "provider_mean": 6957.29,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003010042",
+      "month": "2019-01",
+      "payment": 263796.4,
+      "z_score": 11.24,
+      "provider_mean": 6957.29,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003010042",
+      "month": "2019-02",
+      "payment": 95426.8,
+      "z_score": 3.87,
+      "provider_mean": 6957.29,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003010042",
+      "month": "2019-08",
+      "payment": 82522.0,
+      "z_score": 3.31,
+      "provider_mean": 6957.29,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003010042",
+      "month": "2020-01",
+      "payment": 187290.0,
+      "z_score": 7.89,
+      "provider_mean": 6957.29,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003010042",
+      "month": "2020-02",
+      "payment": 171820.0,
+      "z_score": 7.21,
+      "provider_mean": 6957.29,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003010042",
+      "month": "2024-02",
+      "payment": 153759.0,
+      "z_score": 6.42,
+      "provider_mean": 6957.29,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003010042",
+      "month": "2024-04",
+      "payment": 201428.5,
+      "z_score": 8.51,
+      "provider_mean": 6957.29,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003011602",
+      "month": "2020-10",
+      "payment": 120653.03,
+      "z_score": 5.51,
+      "provider_mean": 8883.35,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003011602",
+      "month": "2021-01",
+      "payment": 119415.91,
+      "z_score": 5.45,
+      "provider_mean": 8883.35,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003011602",
+      "month": "2021-02",
+      "payment": 122456.1,
+      "z_score": 5.6,
+      "provider_mean": 8883.35,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003011602",
+      "month": "2021-03",
+      "payment": 137377.73,
+      "z_score": 6.34,
+      "provider_mean": 8883.35,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003011602",
+      "month": "2021-04",
+      "payment": 133135.04,
+      "z_score": 6.13,
+      "provider_mean": 8883.35,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003011602",
+      "month": "2021-05",
+      "payment": 152121.19,
+      "z_score": 7.07,
+      "provider_mean": 8883.35,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003011602",
+      "month": "2021-06",
+      "payment": 178257.18,
+      "z_score": 8.36,
+      "provider_mean": 8883.35,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003015611",
+      "month": "2024-02",
+      "payment": 124523.12,
+      "z_score": 3.1,
+      "provider_mean": 23464.69,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003015611",
+      "month": "2024-03",
+      "payment": 132523.88,
+      "z_score": 3.34,
+      "provider_mean": 23464.69,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003015611",
+      "month": "2024-04",
+      "payment": 128915.8,
+      "z_score": 3.23,
+      "provider_mean": 23464.69,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003015611",
+      "month": "2024-05",
+      "payment": 121378.92,
+      "z_score": 3.0,
+      "provider_mean": 23464.69,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003015611",
+      "month": "2024-07",
+      "payment": 126178.59,
+      "z_score": 3.15,
+      "provider_mean": 23464.69,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003015611",
+      "month": "2024-10",
+      "payment": 160648.34,
+      "z_score": 4.21,
+      "provider_mean": 23464.69,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003015611",
+      "month": "2024-11",
+      "payment": 141050.06,
+      "z_score": 3.61,
+      "provider_mean": 23464.69,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003024647",
+      "month": "2018-01",
+      "payment": 382839.56,
+      "z_score": 7.89,
+      "provider_mean": 9500.04,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003024647",
+      "month": "2018-02",
+      "payment": 346608.43,
+      "z_score": 7.13,
+      "provider_mean": 9500.04,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003024647",
+      "month": "2018-03",
+      "payment": 518758.11,
+      "z_score": 10.77,
+      "provider_mean": 9500.04,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003024647",
+      "month": "2018-04",
+      "payment": 401978.95,
+      "z_score": 8.3,
+      "provider_mean": 9500.04,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003024647",
+      "month": "2018-05",
+      "payment": 224161.66,
+      "z_score": 4.54,
+      "provider_mean": 9500.04,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003028549",
+      "month": "2022-03",
+      "payment": 662544.62,
+      "z_score": 9.16,
+      "provider_mean": 14223.67,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003028549",
+      "month": "2022-04",
+      "payment": 662247.14,
+      "z_score": 9.16,
+      "provider_mean": 14223.67,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003028549",
+      "month": "2022-06",
+      "payment": 677043.82,
+      "z_score": 9.37,
+      "provider_mean": 14223.67,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003028549",
+      "month": "2022-08",
+      "payment": 684271.01,
+      "z_score": 9.47,
+      "provider_mean": 14223.67,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003028549",
+      "month": "2022-09",
+      "payment": 687402.39,
+      "z_score": 9.51,
+      "provider_mean": 14223.67,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003032848",
+      "month": "2019-10",
+      "payment": 198718.26,
+      "z_score": 8.16,
+      "provider_mean": 6330.35,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003032848",
+      "month": "2019-11",
+      "payment": 130471.09,
+      "z_score": 5.27,
+      "provider_mean": 6330.35,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003032848",
+      "month": "2021-11",
+      "payment": 127838.56,
+      "z_score": 5.16,
+      "provider_mean": 6330.35,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003032848",
+      "month": "2022-08",
+      "payment": 193634.41,
+      "z_score": 7.95,
+      "provider_mean": 6330.35,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003032848",
+      "month": "2023-04",
+      "payment": 196412.57,
+      "z_score": 8.07,
+      "provider_mean": 6330.35,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003032848",
+      "month": "2023-05",
+      "payment": 221288.88,
+      "z_score": 9.12,
+      "provider_mean": 6330.35,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003032848",
+      "month": "2023-11",
+      "payment": 130958.96,
+      "z_score": 5.29,
+      "provider_mean": 6330.35,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003032848",
+      "month": "2023-12",
+      "payment": 124519.97,
+      "z_score": 5.02,
+      "provider_mean": 6330.35,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003032848",
+      "month": "2024-01",
+      "payment": 126351.83,
+      "z_score": 5.09,
+      "provider_mean": 6330.35,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003032848",
+      "month": "2024-09",
+      "payment": 236786.34,
+      "z_score": 9.78,
+      "provider_mean": 6330.35,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003033085",
+      "month": "2024-05",
+      "payment": 1800845.56,
+      "z_score": 5.2,
+      "provider_mean": 76217.54,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003033085",
+      "month": "2024-08",
+      "payment": 1849961.3,
+      "z_score": 5.35,
+      "provider_mean": 76217.54,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003033085",
+      "month": "2024-09",
+      "payment": 1851794.23,
+      "z_score": 5.35,
+      "provider_mean": 76217.54,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003033085",
+      "month": "2024-10",
+      "payment": 2050012.4,
+      "z_score": 5.95,
+      "provider_mean": 76217.54,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003033085",
+      "month": "2024-11",
+      "payment": 1934294.37,
+      "z_score": 5.6,
+      "provider_mean": 76217.54,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003034265",
+      "month": "2018-10",
+      "payment": 298311.57,
+      "z_score": 8.65,
+      "provider_mean": 8511.66,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003034265",
+      "month": "2019-02",
+      "payment": 275105.59,
+      "z_score": 7.96,
+      "provider_mean": 8511.66,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003034265",
+      "month": "2019-04",
+      "payment": 268911.3,
+      "z_score": 7.78,
+      "provider_mean": 8511.66,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003034265",
+      "month": "2019-10",
+      "payment": 307455.1,
+      "z_score": 8.93,
+      "provider_mean": 8511.66,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003034265",
+      "month": "2020-02",
+      "payment": 271666.44,
+      "z_score": 7.86,
+      "provider_mean": 8511.66,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003034265",
+      "month": "2020-10",
+      "payment": 129650.63,
+      "z_score": 3.62,
+      "provider_mean": 8511.66,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003034265",
+      "month": "2021-01",
+      "payment": 115632.14,
+      "z_score": 3.2,
+      "provider_mean": 8511.66,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003034265",
+      "month": "2021-02",
+      "payment": 124283.0,
+      "z_score": 3.46,
+      "provider_mean": 8511.66,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003034265",
+      "month": "2024-08",
+      "payment": 109700.96,
+      "z_score": 3.02,
+      "provider_mean": 8511.66,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003034406",
+      "month": "2018-07",
+      "payment": 66736.19,
+      "z_score": 3.01,
+      "provider_mean": 4233.42,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003034406",
+      "month": "2018-11",
+      "payment": 72228.63,
+      "z_score": 3.28,
+      "provider_mean": 4233.42,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003034406",
+      "month": "2018-12",
+      "payment": 66524.77,
+      "z_score": 3.0,
+      "provider_mean": 4233.42,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003034406",
+      "month": "2020-04",
+      "payment": 68237.21,
+      "z_score": 3.08,
+      "provider_mean": 4233.42,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003034406",
+      "month": "2021-06",
+      "payment": 128003.09,
+      "z_score": 5.96,
+      "provider_mean": 4233.42,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003034406",
+      "month": "2022-08",
+      "payment": 130400.96,
+      "z_score": 6.08,
+      "provider_mean": 4233.42,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003034406",
+      "month": "2023-01",
+      "payment": 136641.65,
+      "z_score": 6.38,
+      "provider_mean": 4233.42,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003034406",
+      "month": "2023-03",
+      "payment": 187693.86,
+      "z_score": 8.84,
+      "provider_mean": 4233.42,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003034406",
+      "month": "2023-05",
+      "payment": 178571.26,
+      "z_score": 8.4,
+      "provider_mean": 4233.42,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003034406",
+      "month": "2023-06",
+      "payment": 165610.84,
+      "z_score": 7.78,
+      "provider_mean": 4233.42,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003034406",
+      "month": "2023-07",
+      "payment": 135387.72,
+      "z_score": 6.32,
+      "provider_mean": 4233.42,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003034406",
+      "month": "2024-04",
+      "payment": 163210.84,
+      "z_score": 7.66,
+      "provider_mean": 4233.42,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003034406",
+      "month": "2024-05",
+      "payment": 168271.22,
+      "z_score": 7.9,
+      "provider_mean": 4233.42,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003034406",
+      "month": "2024-11",
+      "payment": 132116.88,
+      "z_score": 6.16,
+      "provider_mean": 4233.42,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003036708",
+      "month": "2020-06",
+      "payment": 57385.8,
+      "z_score": 3.24,
+      "provider_mean": 5300.6,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003036708",
+      "month": "2020-12",
+      "payment": 62226.2,
+      "z_score": 3.54,
+      "provider_mean": 5300.6,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003036708",
+      "month": "2021-01",
+      "payment": 60677.0,
+      "z_score": 3.44,
+      "provider_mean": 5300.6,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003036708",
+      "month": "2021-02",
+      "payment": 63517.2,
+      "z_score": 3.62,
+      "provider_mean": 5300.6,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003036708",
+      "month": "2021-03",
+      "payment": 61451.6,
+      "z_score": 3.49,
+      "provider_mean": 5300.6,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003036708",
+      "month": "2024-02",
+      "payment": 144006.45,
+      "z_score": 8.62,
+      "provider_mean": 5300.6,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003036708",
+      "month": "2024-03",
+      "payment": 135658.25,
+      "z_score": 8.1,
+      "provider_mean": 5300.6,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003036708",
+      "month": "2024-07",
+      "payment": 101967.3,
+      "z_score": 6.01,
+      "provider_mean": 5300.6,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003036708",
+      "month": "2024-08",
+      "payment": 98687.65,
+      "z_score": 5.8,
+      "provider_mean": 5300.6,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003036708",
+      "month": "2024-10",
+      "payment": 107334.0,
+      "z_score": 6.34,
+      "provider_mean": 5300.6,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003036708",
+      "month": "2024-11",
+      "payment": 98687.65,
+      "z_score": 5.8,
+      "provider_mean": 5300.6,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003037920",
+      "month": "2024-10",
+      "payment": 312396.45,
+      "z_score": 3.89,
+      "provider_mean": 45609.77,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003037920",
+      "month": "2024-11",
+      "payment": 348535.89,
+      "z_score": 4.41,
+      "provider_mean": 45609.77,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003039322",
+      "month": "2020-05",
+      "payment": 3759483.12,
+      "z_score": 4.86,
+      "provider_mean": 172132.23,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003039322",
+      "month": "2024-01",
+      "payment": 3662851.53,
+      "z_score": 4.72,
+      "provider_mean": 172132.23,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003039322",
+      "month": "2024-03",
+      "payment": 3710637.82,
+      "z_score": 4.79,
+      "provider_mean": 172132.23,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003039322",
+      "month": "2024-09",
+      "payment": 3825893.05,
+      "z_score": 4.95,
+      "provider_mean": 172132.23,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003039322",
+      "month": "2024-10",
+      "payment": 3759988.41,
+      "z_score": 4.86,
+      "provider_mean": 172132.23,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003052598",
+      "month": "2020-04",
+      "payment": 115640.22,
+      "z_score": 7.14,
+      "provider_mean": 5031.75,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003052598",
+      "month": "2020-09",
+      "payment": 147912.02,
+      "z_score": 9.22,
+      "provider_mean": 5031.75,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003052598",
+      "month": "2021-05",
+      "payment": 68195.96,
+      "z_score": 4.08,
+      "provider_mean": 5031.75,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003052598",
+      "month": "2021-05",
+      "payment": 65299.82,
+      "z_score": 3.89,
+      "provider_mean": 5031.75,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003052598",
+      "month": "2021-06",
+      "payment": 88961.5,
+      "z_score": 5.42,
+      "provider_mean": 5031.75,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003052598",
+      "month": "2021-09",
+      "payment": 91670.19,
+      "z_score": 5.59,
+      "provider_mean": 5031.75,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003052598",
+      "month": "2021-09",
+      "payment": 68137.59,
+      "z_score": 4.07,
+      "provider_mean": 5031.75,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003052598",
+      "month": "2021-10",
+      "payment": 213426.48,
+      "z_score": 13.45,
+      "provider_mean": 5031.75,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003052598",
+      "month": "2021-11",
+      "payment": 140472.93,
+      "z_score": 8.74,
+      "provider_mean": 5031.75,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003052598",
+      "month": "2021-12",
+      "payment": 107396.5,
+      "z_score": 6.6,
+      "provider_mean": 5031.75,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003052598",
+      "month": "2023-12",
+      "payment": 103477.92,
+      "z_score": 6.35,
+      "provider_mean": 5031.75,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003052598",
+      "month": "2024-06",
+      "payment": 64933.18,
+      "z_score": 3.86,
+      "provider_mean": 5031.75,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003052598",
+      "month": "2024-07",
+      "payment": 66374.44,
+      "z_score": 3.96,
+      "provider_mean": 5031.75,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003076258",
+      "month": "2020-07",
+      "payment": 294272.49,
+      "z_score": 4.95,
+      "provider_mean": 32585.32,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003076258",
+      "month": "2020-09",
+      "payment": 215837.82,
+      "z_score": 3.47,
+      "provider_mean": 32585.32,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003076258",
+      "month": "2020-10",
+      "payment": 239927.48,
+      "z_score": 3.93,
+      "provider_mean": 32585.32,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003085770",
+      "month": "2022-08",
+      "payment": 132533.36,
+      "z_score": 5.16,
+      "provider_mean": 13359.28,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003085770",
+      "month": "2022-09",
+      "payment": 123598.76,
+      "z_score": 4.78,
+      "provider_mean": 13359.28,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003085770",
+      "month": "2022-10",
+      "payment": 111606.75,
+      "z_score": 4.26,
+      "provider_mean": 13359.28,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003085770",
+      "month": "2023-08",
+      "payment": 138000.99,
+      "z_score": 5.4,
+      "provider_mean": 13359.28,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003085770",
+      "month": "2023-10",
+      "payment": 108891.46,
+      "z_score": 4.14,
+      "provider_mean": 13359.28,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003085770",
+      "month": "2024-01",
+      "payment": 109382.84,
+      "z_score": 4.16,
+      "provider_mean": 13359.28,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003093121",
+      "month": "2023-02",
+      "payment": 436122.59,
+      "z_score": 4.31,
+      "provider_mean": 32324.55,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003093121",
+      "month": "2023-05",
+      "payment": 418856.47,
+      "z_score": 4.13,
+      "provider_mean": 32324.55,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003093121",
+      "month": "2023-06",
+      "payment": 396128.92,
+      "z_score": 3.89,
+      "provider_mean": 32324.55,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003093121",
+      "month": "2024-04",
+      "payment": 392891.81,
+      "z_score": 3.85,
+      "provider_mean": 32324.55,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003093121",
+      "month": "2024-05",
+      "payment": 413925.09,
+      "z_score": 4.08,
+      "provider_mean": 32324.55,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003102781",
+      "month": "2019-08",
+      "payment": 35658.78,
+      "z_score": 3.16,
+      "provider_mean": 2826.57,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003102781",
+      "month": "2019-12",
+      "payment": 35880.8,
+      "z_score": 3.18,
+      "provider_mean": 2826.57,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003102781",
+      "month": "2020-01",
+      "payment": 43248.4,
+      "z_score": 3.89,
+      "provider_mean": 2826.57,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003102781",
+      "month": "2021-10",
+      "payment": 54131.99,
+      "z_score": 4.94,
+      "provider_mean": 2826.57,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003102781",
+      "month": "2021-11",
+      "payment": 34547.98,
+      "z_score": 3.05,
+      "provider_mean": 2826.57,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003102781",
+      "month": "2021-12",
+      "payment": 50866.19,
+      "z_score": 4.62,
+      "provider_mean": 2826.57,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003102781",
+      "month": "2022-01",
+      "payment": 153050.27,
+      "z_score": 14.46,
+      "provider_mean": 2826.57,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003102781",
+      "month": "2022-08",
+      "payment": 125791.2,
+      "z_score": 11.84,
+      "provider_mean": 2826.57,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003102781",
+      "month": "2022-11",
+      "payment": 58977.31,
+      "z_score": 5.41,
+      "provider_mean": 2826.57,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003102781",
+      "month": "2022-11",
+      "payment": 34507.21,
+      "z_score": 3.05,
+      "provider_mean": 2826.57,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003102781",
+      "month": "2023-01",
+      "payment": 91224.0,
+      "z_score": 8.51,
+      "provider_mean": 2826.57,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003102781",
+      "month": "2023-01",
+      "payment": 49275.35,
+      "z_score": 4.47,
+      "provider_mean": 2826.57,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003102781",
+      "month": "2023-02",
+      "payment": 189819.84,
+      "z_score": 18.0,
+      "provider_mean": 2826.57,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003102781",
+      "month": "2023-02",
+      "payment": 41821.33,
+      "z_score": 3.75,
+      "provider_mean": 2826.57,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003102781",
+      "month": "2023-03",
+      "payment": 45211.04,
+      "z_score": 4.08,
+      "provider_mean": 2826.57,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003102781",
+      "month": "2023-05",
+      "payment": 53360.85,
+      "z_score": 4.86,
+      "provider_mean": 2826.57,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003102781",
+      "month": "2023-05",
+      "payment": 43337.5,
+      "z_score": 3.9,
+      "provider_mean": 2826.57,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003102781",
+      "month": "2023-06",
+      "payment": 34695.29,
+      "z_score": 3.07,
+      "provider_mean": 2826.57,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003104308",
+      "month": "2019-06",
+      "payment": 178965.16,
+      "z_score": 8.24,
+      "provider_mean": 10352.76,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003104308",
+      "month": "2019-07",
+      "payment": 71946.0,
+      "z_score": 3.01,
+      "provider_mean": 10352.76,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003104308",
+      "month": "2023-12",
+      "payment": 88070.11,
+      "z_score": 3.8,
+      "provider_mean": 10352.76,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003110149",
+      "month": "2023-10",
+      "payment": 309935.75,
+      "z_score": 4.94,
+      "provider_mean": 16569.91,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003110149",
+      "month": "2024-01",
+      "payment": 414410.94,
+      "z_score": 6.7,
+      "provider_mean": 16569.91,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003110149",
+      "month": "2024-02",
+      "payment": 558289.99,
+      "z_score": 9.13,
+      "provider_mean": 16569.91,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003110149",
+      "month": "2024-03",
+      "payment": 558523.59,
+      "z_score": 9.13,
+      "provider_mean": 16569.91,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003110149",
+      "month": "2024-10",
+      "payment": 308437.0,
+      "z_score": 4.92,
+      "provider_mean": 16569.91,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003116021",
+      "month": "2018-01",
+      "payment": 227944.8,
+      "z_score": 6.58,
+      "provider_mean": 14968.56,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003116021",
+      "month": "2018-02",
+      "payment": 189954.0,
+      "z_score": 5.41,
+      "provider_mean": 14968.56,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003116021",
+      "month": "2018-03",
+      "payment": 170585.0,
+      "z_score": 4.81,
+      "provider_mean": 14968.56,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003116021",
+      "month": "2018-04",
+      "payment": 178493.7,
+      "z_score": 5.05,
+      "provider_mean": 14968.56,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003116021",
+      "month": "2018-05",
+      "payment": 181139.5,
+      "z_score": 5.14,
+      "provider_mean": 14968.56,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003116021",
+      "month": "2018-09",
+      "payment": 132327.3,
+      "z_score": 3.63,
+      "provider_mean": 14968.56,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003116021",
+      "month": "2018-10",
+      "payment": 129063.8,
+      "z_score": 3.53,
+      "provider_mean": 14968.56,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003126848",
+      "month": "2021-05",
+      "payment": 67141.82,
+      "z_score": 3.66,
+      "provider_mean": 5292.46,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003126848",
+      "month": "2021-07",
+      "payment": 209239.78,
+      "z_score": 12.07,
+      "provider_mean": 5292.46,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003126848",
+      "month": "2021-11",
+      "payment": 136324.8,
+      "z_score": 7.75,
+      "provider_mean": 5292.46,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003126848",
+      "month": "2021-12",
+      "payment": 135513.36,
+      "z_score": 7.7,
+      "provider_mean": 5292.46,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003126848",
+      "month": "2021-12",
+      "payment": 71108.32,
+      "z_score": 3.89,
+      "provider_mean": 5292.46,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003126848",
+      "month": "2022-01",
+      "payment": 133584.55,
+      "z_score": 7.59,
+      "provider_mean": 5292.46,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003126848",
+      "month": "2022-01",
+      "payment": 68501.86,
+      "z_score": 3.74,
+      "provider_mean": 5292.46,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003126848",
+      "month": "2022-02",
+      "payment": 117519.29,
+      "z_score": 6.64,
+      "provider_mean": 5292.46,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003126848",
+      "month": "2022-03",
+      "payment": 69287.92,
+      "z_score": 3.79,
+      "provider_mean": 5292.46,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003126848",
+      "month": "2022-06",
+      "payment": 118444.68,
+      "z_score": 6.69,
+      "provider_mean": 5292.46,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003126848",
+      "month": "2022-06",
+      "payment": 66384.5,
+      "z_score": 3.61,
+      "provider_mean": 5292.46,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003147588",
+      "month": "2024-03",
+      "payment": 2067736.16,
+      "z_score": 4.06,
+      "provider_mean": 119544.46,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003147588",
+      "month": "2024-05",
+      "payment": 2096500.44,
+      "z_score": 4.12,
+      "provider_mean": 119544.46,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003147588",
+      "month": "2024-07",
+      "payment": 2102907.31,
+      "z_score": 4.13,
+      "provider_mean": 119544.46,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003147588",
+      "month": "2024-08",
+      "payment": 2130255.19,
+      "z_score": 4.19,
+      "provider_mean": 119544.46,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003147588",
+      "month": "2024-10",
+      "payment": 2158652.59,
+      "z_score": 4.25,
+      "provider_mean": 119544.46,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003156043",
+      "month": "2024-05",
+      "payment": 898521.91,
+      "z_score": 4.88,
+      "provider_mean": 47048.34,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003156043",
+      "month": "2024-06",
+      "payment": 868433.93,
+      "z_score": 4.7,
+      "provider_mean": 47048.34,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003156043",
+      "month": "2024-07",
+      "payment": 884958.59,
+      "z_score": 4.8,
+      "provider_mean": 47048.34,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003156043",
+      "month": "2024-08",
+      "payment": 897563.94,
+      "z_score": 4.87,
+      "provider_mean": 47048.34,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003156043",
+      "month": "2024-09",
+      "payment": 861313.64,
+      "z_score": 4.66,
+      "provider_mean": 47048.34,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003156472",
+      "month": "2021-01",
+      "payment": 137166.79,
+      "z_score": 3.25,
+      "provider_mean": 15095.31,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003156472",
+      "month": "2021-09",
+      "payment": 136127.47,
+      "z_score": 3.22,
+      "provider_mean": 15095.31,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003156472",
+      "month": "2022-07",
+      "payment": 136348.08,
+      "z_score": 3.23,
+      "provider_mean": 15095.31,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003156472",
+      "month": "2022-08",
+      "payment": 134927.4,
+      "z_score": 3.19,
+      "provider_mean": 15095.31,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003156472",
+      "month": "2023-05",
+      "payment": 134642.41,
+      "z_score": 3.18,
+      "provider_mean": 15095.31,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003156472",
+      "month": "2023-09",
+      "payment": 219786.91,
+      "z_score": 5.45,
+      "provider_mean": 15095.31,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003156472",
+      "month": "2023-10",
+      "payment": 245009.03,
+      "z_score": 6.12,
+      "provider_mean": 15095.31,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003156472",
+      "month": "2023-11",
+      "payment": 246480.66,
+      "z_score": 6.16,
+      "provider_mean": 15095.31,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003156472",
+      "month": "2023-12",
+      "payment": 251915.61,
+      "z_score": 6.31,
+      "provider_mean": 15095.31,
+      "anomaly_type": "SPIKE",
+      "severity": "CRITICAL"
+    },
+    {
+      "provider_npi": "1003156472",
+      "month": "2024-05",
+      "payment": 179695.68,
+      "z_score": 4.38,
+      "provider_mean": 15095.31,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003160391",
+      "month": "2024-01",
+      "payment": 1326287.97,
+      "z_score": 3.9,
+      "provider_mean": 98118.19,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003160391",
+      "month": "2024-03",
+      "payment": 1321581.13,
+      "z_score": 3.89,
+      "provider_mean": 98118.19,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    },
+    {
+      "provider_npi": "1003160391",
+      "month": "2024-05",
+      "payment": 1331776.1,
+      "z_score": 3.92,
+      "provider_mean": 98118.19,
+      "anomaly_type": "SPIKE",
+      "severity": "HIGH"
+    }
+  ],
+  "high_risk_count": 1062,
+  "medium_risk_count": 1057
+}
