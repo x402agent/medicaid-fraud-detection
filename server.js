@@ -27,6 +27,14 @@ app.use(cors());
 app.use(express.json({ limit: '50mb' }));
 app.use(express.static(path.join(__dirname, 'frontend', 'public')));
 
+// Browser-safe runtime config. Google Maps key stays in env, not in static assets.
+app.get('/config', (req, res) => {
+    res.json({
+        googleMapsApiKey: process.env.GOOGLE_MAPS_API_KEY || '',
+    });
+});
+
+
 // ── Google GenAI Setup ──
 const API_KEY = process.env.GOOGLE_API_KEY || process.env.GEMINI_API_KEY;
 const VERTEX_API_KEY = process.env.VERTEX_API_KEY;

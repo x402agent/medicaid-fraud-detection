@@ -1724,10 +1724,16 @@ async function communityGeolocate() {
         const lat = pos.coords.latitude;
         const lng = pos.coords.longitude;
 
-        // Use Google Maps Geocoding to get zip code from coords
+        // Use Google Maps Geocoding to get zip code from coords (key from server env)
         try {
-            const geoRes = await fetch(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${lng}&result_type=postal_code&key=AIzaSyBSa36MUVb-Nmp0PvI6IA5_2AiyC1JVf0g`);
-            const geoData = await geoRes.json();
+            const cfgRes = await fetch('/config');
+            const cfg = cfgRes.ok ? await cfgRes.json() : {};
+            const mapsKey = (cfg && cfg.googleMapsApiKey) ? String(cfg.googleMapsApiKey) : '';
+            let geoData = { results: [] };
+            if (mapsKey) {
+                const geoRes = await fetch(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${lng}&result_type=postal_code&key=${encodeURIComponent(mapsKey)}`);
+                geoData = await geoRes.json();
+            }
 
             if (geoData.results && geoData.results.length > 0) {
                 const components = geoData.results[0].address_components || [];
